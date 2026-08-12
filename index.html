@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<title>Dr Međed — stomatološka ordinacija, Obrenovac</title>
+<meta name="description" content="Nežna, moderna stomatologija u Obrenovcu. Dežurni 24/7, estetska stomatologija i estetska medicina. Miloša Obrenovića 118. Tel 063 139 99 97.">
+<meta name="theme-color" content="#FFFBF7">
+<link rel="icon" href="assets/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dr Međed — stomatološka ordinacija, Obrenovac">
+<meta property="og:description" content="Dežurni 24/7 • Miloša Obrenovića 118, Obrenovac">
+<meta property="og:image" content="assets/hero-pacijent-nova.webp">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@1,700&family=Manrope:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #F5F1EB; color: #3D2B1F; font-family: 'Instrument Sans', 'Manrope', system-ui, sans-serif; font-weight: 300; -webkit-font-smoothing: antialiased; }
+  a { color: #3D2B1F; text-decoration: none; }
+  a:hover { color: #8A7256; }
+  ::selection { background: #E4D8C6; }
+  @keyframes baWipe { 0%, 12% { clip-path: inset(0 0 0 0); } 50%, 62% { clip-path: inset(0 100% 0 0); } 100% { clip-path: inset(0 0 0 0); } }
+  @keyframes baLinija { 0%, 12% { left: 100%; } 50%, 62% { left: 0%; } 100% { left: 100%; } }
+  @keyframes posleWipe { 0%, 12% { clip-path: inset(0 0 0 100%); } 50%, 62% { clip-path: inset(0 0 0 8%); } 100% { clip-path: inset(0 0 0 100%); } }
+  @keyframes posleLinija { 0%, 12% { left: 100%; } 50%, 62% { left: 8%; } 100% { left: 100%; } }
+  @keyframes lampica { 0%, 100% { box-shadow: 0 0 0 0 rgba(10,122,76,0.5); opacity: 1; } 50% { box-shadow: 0 0 0 5px rgba(10,122,76,0); opacity: 0.72; } }
+  @keyframes sjaj { 0% { transform: translateX(-140%) skewX(-18deg); } 55%, 100% { transform: translateX(320%) skewX(-18deg); } }
+  #kontakt input::placeholder { color: rgba(43,27,18,0.35); }
+  input[type=range] { -webkit-appearance: none; appearance: none; background: transparent; height: 34px; }
+  input[type=range]::-webkit-slider-runnable-track { background: transparent; height: 34px; border: none; }
+  input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 30px; height: 30px; border-radius: 50%; background: #F5F1EB; border: 1px solid rgba(61,43,31,0.35); box-shadow: 0 3px 10px rgba(61,43,31,0.3); cursor: ew-resize; }
+  input[type=range]::-moz-range-track { background: transparent; height: 34px; border: none; }
+  input[type=range]::-moz-range-thumb { width: 30px; height: 30px; border-radius: 50%; background: #F5F1EB; border: 1px solid rgba(61,43,31,0.35); cursor: ew-resize; }
+</style>
+</helmet>
+
+<div style="width:100%">
+
+  <header id="main-header" style="{{ stilHedera }}">
+    <div style="{{ stilHedTraka }}">
+      <a href="#vrh" style="display:flex; align-items:center; gap:clamp(9px,2.4vw,14px); flex:0 1 auto; min-width:0; white-space:nowrap">
+        <span style="width:clamp(38px,10vw,48px); height:clamp(38px,10vw,48px); border-radius:50%; background:#EDE6DC; display:flex; align-items:center; justify-content:center; flex:none; overflow:hidden; transition:transform 700ms cubic-bezier(0.16,1,0.3,1)" style-hover="transform:rotate(-8deg) scale(1.05)"><img src="assets/logo.png" alt="Dr Međed" style="width:100%; height:100%; border-radius:50%; display:block" /></span>
+        <span style="display:flex; flex-direction:column; line-height:1.1">
+          <span style="font-family:'Instrument Serif',serif; font-size:clamp(16px,4.4vw,19px); letter-spacing:0.03em; color:#1A1410">DR MEĐED</span>
+          <span style="font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:8.5px; letter-spacing:0.18em; text-transform:uppercase; white-space:nowrap; color:#8B7E74; margin-top:3px">Stomatološka ordinacija</span>
+        </span>
+      </a>
+      <nav style="display:flex; align-items:center; gap:14px; flex-wrap:nowrap; justify-content:flex-end; flex:0 0 auto">
+        <div style="{{ stilNavLinkovi }}">
+        <a href="#usluge" style="font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:12.5px; text-transform:uppercase; letter-spacing:0.12em; white-space:nowrap; color:#6B5D52; padding-bottom:4px; background-image:linear-gradient(#C9B896,#C9B896); background-repeat:no-repeat; background-position:left bottom; background-size:0% 1.5px; transition:color 300ms ease, background-size 400ms cubic-bezier(0.16,1,0.3,1)" style-hover="color:#1A1410; background-size:100% 1.5px">Usluge</a>
+        <a href="#o-doktoru" style="font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:12.5px; text-transform:uppercase; letter-spacing:0.12em; white-space:nowrap; color:#6B5D52; padding-bottom:4px; background-image:linear-gradient(#C9B896,#C9B896); background-repeat:no-repeat; background-position:left bottom; background-size:0% 1.5px; transition:color 300ms ease, background-size 400ms cubic-bezier(0.16,1,0.3,1)" style-hover="color:#1A1410; background-size:100% 1.5px">O nama</a>
+        <a href="#cenovnik" style="font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:12.5px; text-transform:uppercase; letter-spacing:0.12em; white-space:nowrap; color:#6B5D52; padding-bottom:4px; background-image:linear-gradient(#C9B896,#C9B896); background-repeat:no-repeat; background-position:left bottom; background-size:0% 1.5px; transition:color 300ms ease, background-size 400ms cubic-bezier(0.16,1,0.3,1)" style-hover="color:#1A1410; background-size:100% 1.5px">Cenovnik</a>
+        <a href="#kontakt" style="font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:12.5px; text-transform:uppercase; letter-spacing:0.12em; white-space:nowrap; color:#6B5D52; padding-bottom:4px; background-image:linear-gradient(#C9B896,#C9B896); background-repeat:no-repeat; background-position:left bottom; background-size:0% 1.5px; transition:color 300ms ease, background-size 400ms cubic-bezier(0.16,1,0.3,1)" style-hover="color:#1A1410; background-size:100% 1.5px">Kontakt</a>
+        </div>
+        <a href="tel:+381631399997" style="{{ stilPozovi }}">Pozovi</a>
+        <a href="#kontakt" style="display:inline-flex; align-items:center; gap:8px; background:#1A1410; color:#FFFBF7; padding:13px clamp(15px,4vw,26px); border-radius:999px; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:clamp(13px,3.5vw,14px); letter-spacing:0.02em; white-space:nowrap; transition:background 300ms ease, transform 300ms ease, box-shadow 300ms ease" style-hover="background:#24201E; color:#FFFBF7; transform:translateY(-1.5px); box-shadow:0 10px 20px rgba(0,0,0,0.12)">
+          <span>Zakaži pregled</span>
+          <span style="width:18px; height:18px; border-radius:50%; background:rgba(255,255,255,0.15); display:flex; align-items:center; justify-content:center; font-size:10px; flex:none">→</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="vrh" data-screen-label="Hero scroll" style="{{ stilHeroObuhvat }}">
+    <div style="{{ scena }}">
+
+      <div id="hero-tekst" style="{{ stilTeksta }}">
+        <span style="display:inline-flex; align-items:center; gap:8px; align-self:flex-start; background:#CDEBE0; border-radius:999px; padding:8px 14px; font-size:11px; text-transform:uppercase; letter-spacing:0.08em; white-space:nowrap; color:#1A3A2E">
+          <span style="width:6px; height:6px; border-radius:50%; background:#0A7A4C; flex:none"></span>
+          <span>Nova ordinacija</span>
+        </span>
+
+        <h1 style="margin:20px 0 0; font-family:'Instrument Sans',sans-serif; font-weight:300; font-size:clamp(28px,min(5.2vh,9vw),50px); line-height:0.95; letter-spacing:-0.04em; color:#2B1E16">
+          <span style="display:block; white-space:nowrap">Nežna, moderna</span>
+          <span style="display:block">stomatologija</span>
+          <span style="display:block; margin-top:2px; font-family:'Instrument Serif',serif; font-style:italic; font-weight:700; font-size:clamp(34px,min(6.4vh,11vw),62px); line-height:0.95">u Obrenovcu</span>
+        </h1>
+
+        <p style="margin:20px 0 0; max-width:32ch; font-family:'Instrument Sans',sans-serif; font-size:clamp(15px,min(2.6vh,4.4vw),18.5px); line-height:1.4; color:#6B5E55">Ordinacija gde dežuramo 24/7, a estetika izgleda prirodno, ne veštački.</p>
+
+        <div style="display:flex; flex-wrap:wrap; gap:8px 16px; margin-top:32px">
+          <a href="#kontakt" data-hero-cta="1" style="position:relative; overflow:hidden; display:inline-flex; align-items:center; padding:22px 38px; background:#2B221E; color:#FFFBF7; border-radius:999px; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:15px; white-space:nowrap; box-shadow:0 14px 32px rgba(43,34,30,0.28); transition:transform 200ms ease, box-shadow 200ms ease" style-hover="background:#3D2B1F; color:#FFFBF7; transform:translateY(-2px); box-shadow:0 18px 40px rgba(43,34,30,0.32)"><span style="position:absolute; top:0; bottom:0; left:0; width:46px; background:linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.34) 50%, rgba(255,255,255,0) 100%); animation:sjaj 4.2s cubic-bezier(.4,.05,.5,.95) infinite; pointer-events:none"></span><span style="position:relative">Zakaži pregled →</span></a>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:14px; margin-top:36px; padding-top:22px; border-top:1px solid rgba(43,30,22,0.1); align-self:stretch; max-width:440px">
+          <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap">
+            <div style="display:flex; align-items:center">
+              <span style="width:26px; height:26px; border-radius:50%; background:#E8DDD0; border:2px solid #FFFBF7; display:flex; align-items:center; justify-content:center; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:10px; color:#1A1410">JM</span>
+              <span style="width:26px; height:26px; border-radius:50%; background:#E8DDD0; border:2px solid #FFFBF7; display:flex; align-items:center; justify-content:center; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:10px; color:#1A1410; margin-left:-8px">AK</span>
+              <span style="width:26px; height:26px; border-radius:50%; background:#E8DDD0; border:2px solid #FFFBF7; display:flex; align-items:center; justify-content:center; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:10px; color:#1A1410; margin-left:-8px">SP</span>
+            </div>
+            <span style="font-size:11px; letter-spacing:0.1em; color:#C9A227">★★★★★</span>
+            <span style="font-family:'Instrument Sans',sans-serif; font-size:13px; letter-spacing:0.01em; white-space:nowrap; color:#1A1410">5.0 na Google-u</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-family:'Instrument Sans',sans-serif; font-size:12.5px; letter-spacing:0.02em; color:#8B7E74">
+            <span style="display:inline-flex; align-items:center; gap:7px; white-space:nowrap">
+              <span style="flex:none; width:8px; height:8px; border-radius:50%; background:#0A7A4C; animation:lampica 1.8s ease-in-out infinite"></span>
+              <span>Dežurni 24/7</span>
+            </span>
+            <span style="opacity:0.5">•</span>
+            <span style="white-space:nowrap">Miloša Obrenovića 118, Obrenovac</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="{{ stilSlike1 }}"></div>
+
+      <div style="{{ stilPilule }}">
+        <span style="width:7px; height:7px; border-radius:50%; background:#0A7A4C; flex:none"></span>
+        <span>Dežurni 24/7 • Miloša Obrenovića 118</span>
+      </div>
+
+      <div style="{{ stilKartice }}">
+        <div style="{{ stilSlike2 }}"></div>
+        <div style="{{ stilPotpisa }}">
+          <p style="margin:0 0 12px; font-family:'Instrument Sans',sans-serif; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#9A8974">Miloša Obrenovića 118 • Obrenovac</p>
+          <p style="margin:0; font-family:'Instrument Sans',sans-serif; font-weight:300; font-size:26px; line-height:1.08; letter-spacing:-0.03em; color:#2B1E16">Dobrodošli u ordinaciju<br /><span style="display:inline-block; margin-top:6px; font-family:'Instrument Serif',serif; font-style:italic; font-weight:700; font-size:30px; letter-spacing:0.02em; text-transform:uppercase">Dr Međed</span></p>
+          <p style="margin:12px 0 0; font-family:'Instrument Sans',sans-serif; font-size:10.5px; letter-spacing:1.1px; text-transform:uppercase; white-space:nowrap; color:#4F7C82">Bez bola. Bez žurbe. Bez osuđivanja.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section id="filozofija" data-screen-label="Naša filozofija" style="background:#FFFFFF; padding:clamp(60px,9vw,100px) clamp(20px,4vw,48px)">
+    <div style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:clamp(32px,5vw,64px); align-items:start">
+      <div style="position:sticky; top:120px; display:flex; flex-direction:column; gap:28px">
+        <span style="font-family:'Instrument Sans',sans-serif; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#2B1E16; opacity:0.6">Naša filozofija • Obrenovac</span>
+        <h2 style="margin:0; font-family:'Instrument Serif',serif; font-weight:500; font-size:32px; line-height:1.25; letter-spacing:-0.01em; color:#2B1E16; text-wrap:pretty">Zato što poseta može da izgleda i oseća se drugačije.</h2>
+        <div style="width:100%; aspect-ratio:4/3; border-radius:18px; overflow:hidden; background-color:#FBF7F2; background-image:url('assets/filozofija-ordinacija.webp'); background-size:cover; background-position:50% 55%"></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:24px">
+        <div style="display:flex; gap:26px; align-items:flex-start; background:#FFFFFF; border:1px solid #F1EAE2; border-radius:20px; padding:clamp(22px,4vw,32px); transition:transform 260ms cubic-bezier(.2,.7,.3,1), border-color 260ms ease, box-shadow 260ms ease" style-hover="transform:translateY(-4px); border-color:#E8DDD3; box-shadow:0 22px 44px rgba(43,30,22,0.08)">
+          <span style="flex:none; width:52px; height:52px; border-radius:14px; background:#FBF7F2; display:flex; align-items:center; justify-content:center; font-size:20px; color:#2B1E16">◠</span>
+          <div style="display:flex; flex-direction:column; gap:8px; flex:1 1 auto; min-width:0">
+            <span style="font-family:'Instrument Serif',serif; font-weight:500; font-size:24px; line-height:1.25; color:#2B1E16">Mirna atmosfera</span>
+            <span style="font-family:'Instrument Sans',sans-serif; font-size:16px; line-height:1.65; color:#6B5E55">Nema mirisa ordinacije, tiha muzika, topli tonovi.</span>
+          </div>
+          <span style="flex:none; font-family:'Instrument Sans',sans-serif; font-size:12px; letter-spacing:0.12em; color:#C9BFB5; padding-top:6px">01 /</span>
+        </div>
+        <div style="display:flex; gap:26px; align-items:flex-start; background:#FFFFFF; border:1px solid #F1EAE2; border-radius:20px; padding:clamp(22px,4vw,32px); transition:transform 260ms cubic-bezier(.2,.7,.3,1), border-color 260ms ease, box-shadow 260ms ease" style-hover="transform:translateY(-4px); border-color:#E8DDD3; box-shadow:0 22px 44px rgba(43,30,22,0.08)">
+          <span style="flex:none; width:52px; height:52px; border-radius:14px; background:#FBF7F2; display:flex; align-items:center; justify-content:center; font-size:20px; color:#2B1E16">▣</span>
+          <div style="display:flex; flex-direction:column; gap:8px; flex:1 1 auto; min-width:0">
+            <span style="font-family:'Instrument Serif',serif; font-weight:500; font-size:24px; line-height:1.25; color:#2B1E16">Objašnjeno unapred</span>
+            <span style="font-family:'Instrument Sans',sans-serif; font-size:16px; line-height:1.65; color:#6B5E55">Pokazujemo na monitoru pre nego što krenemo, ti odlučuješ.</span>
+          </div>
+          <span style="flex:none; font-family:'Instrument Sans',sans-serif; font-size:12px; letter-spacing:0.12em; color:#C9BFB5; padding-top:6px">02 /</span>
+        </div>
+        <div style="display:flex; gap:26px; align-items:flex-start; background:#FFFFFF; border:1px solid #F1EAE2; border-radius:20px; padding:clamp(22px,4vw,32px); transition:transform 260ms cubic-bezier(.2,.7,.3,1), border-color 260ms ease, box-shadow 260ms ease" style-hover="transform:translateY(-4px); border-color:#E8DDD3; box-shadow:0 22px 44px rgba(43,30,22,0.08)">
+          <span style="flex:none; width:52px; height:52px; border-radius:14px; background:#FBF7F2; display:flex; align-items:center; justify-content:center; font-size:20px; color:#2B1E16">❥</span>
+          <div style="display:flex; flex-direction:column; gap:8px; flex:1 1 auto; min-width:0">
+            <span style="font-family:'Instrument Serif',serif; font-weight:500; font-size:24px; line-height:1.25; color:#2B1E16">Nežan pristup</span>
+            <span style="font-family:'Instrument Sans',sans-serif; font-size:16px; line-height:1.65; color:#6B5E55">Radimo u tvojim pauzama, sa pauzama kad tebi treba.</span>
+          </div>
+          <span style="flex:none; font-family:'Instrument Sans',sans-serif; font-size:12px; letter-spacing:0.12em; color:#C9BFB5; padding-top:6px">03 /</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="usluge" data-screen-label="Usluge" style="background:#EFE8DE; padding:clamp(64px,9vw,110px) clamp(20px,4vw,48px)">
+    <div style="max-width:1180px; margin:0 auto; display:flex; flex-direction:column; gap:52px">
+      <h2 style="margin:0; font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.025em; font-size:clamp(28px,3.2vw,44px); line-height:1.14; color:#3D2B1F">Usluge</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr)); gap:20px">
+        <sc-for list="{{ usluge }}" as="u" hint-placeholder-count="5">
+          <div style="position:relative; background:#FFFBF7; border:1px solid #E8DDD3; border-radius:24px; padding:clamp(22px,4vw,28px); display:flex; flex-direction:column; min-height:200px; transition:transform 260ms cubic-bezier(.2,.7,.3,1), box-shadow 260ms ease" style-hover="transform:translateY(-4px); box-shadow:0 24px 48px rgba(43,30,22,0.12)">
+            <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:16px">
+              <span style="width:56px; height:56px; border-radius:50%; background:#E8DDD3; display:flex; align-items:center; justify-content:center; flex:none"><span style="{{ u.znakStil }}" style-hover="transform:scale(1.1)"></span></span>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:10px; padding-top:18px">
+              <span style="font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:22px; line-height:1.25; letter-spacing:-0.01em; color:#2B221E">{{ u.naziv }}</span>
+              <span style="font-family:'Instrument Sans',sans-serif; font-size:15px; line-height:1.65; color:#6B5D55">{{ u.opis }}</span>
+            </div>
+          </div>
+        </sc-for>
+        <a href="#estetika" style="position:relative; background:#FFFBF7; border:1px solid #E8DDD3; border-radius:24px; padding:clamp(22px,4vw,28px); display:flex; flex-direction:column; min-height:200px; transition:transform 260ms cubic-bezier(.2,.7,.3,1), box-shadow 260ms ease" style-hover="transform:translateY(-4px); box-shadow:0 24px 48px rgba(43,30,22,0.12)">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:16px">
+            <span style="width:56px; height:56px; border-radius:50%; background:#E8DDD3; display:flex; align-items:center; justify-content:center; flex:none"><img src="assets/ic-estetska-medicina.png" alt="" style="width:32px; height:32px; transition:transform 240ms ease" style-hover="transform:scale(1.1)" /></span>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:12px; padding-top:18px">
+            <span style="font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.02em; font-size:25px; line-height:1.2; color:#2B221E">Estetska medicina</span>
+            <span style="font-size:15.5px; line-height:1.7; color:#6B5D55">Hijaluron, mezoterapija, botoks, prirodno lice, bez preterivanja. Isto nežno kao i zubi.</span>
+            <span style="margin-top:6px; font-size:13.5px; letter-spacing:0.1em; text-transform:uppercase; color:#8A9A7B">Pogledaj tretmane →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="rezultati" data-screen-label="Rezultati" style="background:#FFFBF7; padding:clamp(64px,9vw,110px) clamp(20px,4vw,48px)">
+    <div style="max-width:1180px; margin:0 auto; display:flex; flex-direction:column; gap:48px">
+      <div style="display:flex; flex-direction:column; gap:20px; align-items:flex-start">
+        <span style="display:inline-flex; align-items:center; background:#E8F3EF; color:#4A5A54; border-radius:999px; padding:8px 16px; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; white-space:nowrap">Realan rezultat • bez filtera</span>
+        <h2 style="margin:0; font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.025em; font-size:clamp(28px,3.2vw,44px); line-height:1.14; color:#2B221E">Osmeh koji priča sam za sebe</h2>
+        <p style="margin:0; font-size:17px; line-height:1.6; color:#6B5D55">Bez filtera, naši pacijenti.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:clamp(32px,4vw,56px); align-items:center">
+        <div style="position:relative; width:100%; aspect-ratio:3/2; overflow:hidden; border-radius:24px; background:#E8DDD3; background-image:url('assets/ba-zubi-pre.jpg'); background-size:cover; background-position:center 48%">
+          <div style="position:absolute; inset:0; background-image:url('assets/ba-zubi-posle.jpg'); background-size:cover; background-position:center 48%; animation:posleWipe 7s cubic-bezier(.5,.05,.5,.95) infinite"></div>
+          <div style="position:absolute; top:0; bottom:0; width:2px; background:#C9B896; animation:posleLinija 7s cubic-bezier(.5,.05,.5,.95) infinite"></div>
+          <span style="position:absolute; left:16px; bottom:16px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#FFFFFF; text-shadow:0 1px 6px rgba(0,0,0,0.45)">Pre</span>
+          <span style="position:absolute; right:16px; bottom:16px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#FFFFFF; text-shadow:0 1px 6px rgba(0,0,0,0.45)">Posle</span>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:24px; align-items:flex-start">
+          <h3 style="margin:0; font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.02em; font-size:32px; line-height:1.2; color:#2B221E">Kompletan tretman osmeha</h3>
+          <div style="display:flex; flex-direction:column; gap:14px">
+            <span style="display:flex; align-items:center; gap:12px; font-size:17px; color:#4E3B2C"><span style="width:22px; height:22px; border-radius:50%; background:#E8F3EF; color:#4A5A54; display:flex; align-items:center; justify-content:center; font-size:12px; flex:none">✓</span>Uklanjanje zubnog kamenca</span>
+            <span style="display:flex; align-items:center; gap:12px; font-size:17px; color:#4E3B2C"><span style="width:22px; height:22px; border-radius:50%; background:#E8F3EF; color:#4A5A54; display:flex; align-items:center; justify-content:center; font-size:12px; flex:none">✓</span>Poliranje</span>
+            <span style="display:flex; align-items:center; gap:12px; font-size:17px; color:#4E3B2C"><span style="width:22px; height:22px; border-radius:50%; background:#E8F3EF; color:#4A5A54; display:flex; align-items:center; justify-content:center; font-size:12px; flex:none">✓</span>Profesionalno izbeljivanje</span>
+          </div>
+          <a href="#kontakt" style="display:inline-flex; align-items:center; height:52px; padding:0 30px; background:#2B221E; color:#FFFBF7; border-radius:999px; font-size:15px; transition:transform 200ms ease, background 200ms ease" style-hover="background:#3D2B1F; color:#FFFBF7; transform:translateY(-2px)">Pogledajte sve transformacije →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="estetika" data-screen-label="Estetska medicina" style="background:#E9DCCF; padding:clamp(64px,9vw,110px) clamp(20px,4vw,48px)">
+    <div style="max-width:1180px; margin:0 auto; display:flex; flex-direction:column; gap:52px">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:clamp(28px,4vw,64px); align-items:end">
+        <h2 style="margin:0; font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.025em; font-size:clamp(28px,3.2vw,44px); line-height:1.14; color:#3D2B1F; text-wrap:balance">Estetska medicina, u istoj ordinaciji</h2>
+        <p style="margin:0; font-size:16.5px; line-height:1.7; color:#6B5843">Osmeh i koža lica se gledaju zajedno. Tretmani su u malim količinama i u više koraka, tako da lice ostane prepoznatljivo.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr)); gap:20px">
+        <sc-for list="{{ estetika }}" as="e" hint-placeholder-count="4">
+          <div style="background:#FFFBF7; border-radius:20px; overflow:hidden; display:flex; flex-direction:column">
+            <div style="{{ e.stilSlike }}">
+              <sc-if value="{{ e.imaBA }}" hint-placeholder-val="{{ true }}">
+                <div style="{{ e.stilPre }}"></div>
+                <div style="position:absolute; top:0; bottom:0; width:1px; background:rgba(255,255,255,0.9); animation:baLinija 7s cubic-bezier(.5,.05,.5,.95) infinite"></div>
+                <span style="position:absolute; left:14px; bottom:12px; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:#FFFFFF; text-shadow:0 1px 6px rgba(0,0,0,0.5)">Pre</span>
+                <span style="position:absolute; right:14px; bottom:12px; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:#FFFFFF; text-shadow:0 1px 6px rgba(0,0,0,0.5)">Posle</span>
+              </sc-if>
+            </div>
+            <div style="padding:26px 26px 30px; display:flex; flex-direction:column; gap:12px">
+              <span style="font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.02em; font-size:24px; line-height:1.2; color:#3D2B1F">{{ e.naziv }}</span>
+              <span style="font-size:15.5px; line-height:1.7; color:#6B5843">{{ e.opis }}</span>
+              <span style="font-size:13px; letter-spacing:0.1em; text-transform:uppercase; color:#9A8974; margin-top:4px">{{ e.trajanje }}</span>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:28px">
+        <div style="display:flex; flex-direction:column; gap:14px">
+          <div style="position:relative; width:100%; aspect-ratio:1179/620; overflow:hidden; border-radius:20px; background:#E9DCCF">
+            <div style="position:absolute; inset:0; background-image:url('assets/ba-aquashine-posle.jpg'); background-size:cover; background-position:center"></div>
+            <div style="{{ stilPre1 }}"></div>
+            <div style="{{ stilLinija1 }}"></div>
+            <span style="position:absolute; left:16px; bottom:14px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#FFFFFF; text-shadow:0 1px 6px rgba(0,0,0,0.5)">Pre</span>
+            <span style="position:absolute; right:16px; bottom:14px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#FFFFFF; text-shadow:0 1px 6px rgba(0,0,0,0.5)">Posle</span>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:6px 16px; padding-top:10px; border-top:1px solid rgba(61,43,31,0.18)">
+            <span style="font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.02em; font-size:20px; color:#3D2B1F">AquaShine PTX</span>
+            <span style="font-size:13.5px; color:#8A7256; white-space:nowrap">Regeneracija kože</span>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px">
+          <div style="position:relative; width:100%; aspect-ratio:1179/620; overflow:hidden; border-radius:20px; background:#E9DCCF">
+            <div style="position:absolute; inset:0; background-image:url('assets/ba-botoks-posle.jpg'); background-size:cover; background-position:center"></div>
+            <div style="{{ stilPre2 }}"></div>
+            <div style="{{ stilLinija2 }}"></div>
+            <span style="position:absolute; left:16px; bottom:14px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#FFFFFF; text-shadow:0 1px 6px rgba(0,0,0,0.5)">Pre</span>
+            <span style="position:absolute; right:16px; bottom:14px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#FFFFFF; text-shadow:0 1px 6px rgba(0,0,0,0.5)">Posle</span>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:6px 16px; padding-top:10px; border-top:1px solid rgba(61,43,31,0.18)">
+            <span style="font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.02em; font-size:20px; color:#3D2B1F; white-space:nowrap">Botoks i skin booster</span>
+            <span style="font-size:13.5px; color:#8A7256; white-space:nowrap">Regija oko očiju</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proces" data-screen-label="Proces" style="position:relative; overflow:hidden; background:#3D2B1F; color:#F5F1EB; padding:clamp(70px,9vw,120px) clamp(20px,4vw,48px)">
+    <div style="position:relative; max-width:1180px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr)); gap:clamp(36px,5vw,80px); align-items:stretch">
+
+      <div style="display:flex; flex-direction:column; align-items:flex-start; gap:24px">
+        <span style="display:inline-flex; align-items:center; gap:8px; border:1px solid rgba(245,241,235,0.24); border-radius:999px; padding:8px 14px; font-family:'Instrument Sans',sans-serif; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; white-space:nowrap; color:#C9B896">Kako radimo • 3 koraka</span>
+        <h2 style="margin:0; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(34px,4.4vw,56px); line-height:0.95; letter-spacing:-0.02em; color:#FFFBF7">Kako to izgleda<br />u tri koraka</h2>
+        <p style="margin:0; font-family:'Instrument Sans',sans-serif; font-size:16px; line-height:1.6; color:#C9B896; opacity:0.7">Bez bola. Bez iznenađenja.<br />Bez žurbe.</p>
+        <a href="#kontakt" style="display:inline-flex; align-items:center; gap:10px; margin-top:auto; padding-top:30px; border-top:1px solid rgba(255,255,255,0.15); width:100%; font-family:'Instrument Sans',sans-serif; font-size:15px; color:#FFFBF7; transition:color 240ms ease" style-hover="color:#C9B896">
+          <span>Zakaži prvi pregled</span>
+          <span>→</span>
+        </a>
+      </div>
+
+      <div style="display:flex; flex-direction:column">
+        <sc-for list="{{ koraci }}" as="k" hint-placeholder-count="3">
+          <div style="{{ k.stilReda }}" style-hover="border-top-color:#C9B896; border-top-width:2px">
+            <span style="font-family:'Instrument Serif',serif; font-size:48px; line-height:1; color:#C9B896; opacity:0.3; transition:opacity 300ms ease, transform 300ms ease" style-hover="opacity:1; transform:scale(1.2)">{{ k.broj }}</span>
+            <div style="display:flex; flex-direction:column; gap:10px">
+              <span style="font-family:'Instrument Serif',serif; font-size:24px; line-height:1.25; color:#FFFBF7">{{ k.naziv }}</span>
+              <span style="font-family:'Instrument Sans',sans-serif; font-size:15px; line-height:1.7; color:#EDE6DC; opacity:0.6">{{ k.opis }}</span>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="o-doktoru" data-screen-label="O doktoru" style="background:#FFFBF7; padding:clamp(70px,9vw,120px) clamp(20px,4vw,32px)">
+    <div style="max-width:1240px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr)); gap:clamp(36px,5vw,88px); align-items:center">
+
+      <div style="position:relative; width:100%; height:clamp(400px,62vh,640px); border-radius:32px; overflow:hidden; background:#EDE6DC">
+        <div style="{{ stilDoktorSlika }}"></div>
+        <div style="position:absolute; left:0; right:0; bottom:0; height:40%; background:linear-gradient(to top, rgba(0,0,0,0.25), rgba(0,0,0,0)); pointer-events:none"></div>
+        <div style="position:absolute; left:24px; bottom:24px; display:flex; align-items:center; gap:12px; background:rgba(255,255,255,0.9); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border-radius:999px; padding:12px 20px; box-shadow:0 10px 24px rgba(26,20,16,0.14)">
+          <span style="width:8px; height:8px; border-radius:50%; background:#0A7A4C; flex:none; animation:lampica 1.8s ease-in-out infinite"></span>
+          <span style="font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:12px; letter-spacing:0.02em; white-space:nowrap; color:#1A1410">10+ godina • 1200+ osmeha • Obrenovac</span>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; align-items:flex-start">
+        <div style="display:flex; align-items:center; gap:8px">
+          <span style="width:1px; height:32px; background:#C9B896; flex:none"></span>
+          <span style="font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#8B7E74">O doktoru</span>
+        </div>
+
+        <div style="position:relative; margin-top:24px">
+          <span style="position:absolute; left:-12px; top:-22px; font-family:'Instrument Serif',serif; font-size:clamp(84px,11vw,120px); line-height:1; color:#C9B896; opacity:0.2; pointer-events:none; user-select:none">„</span>
+          <p style="position:relative; margin:0; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(36px,3.6vw,48px); line-height:0.95; letter-spacing:-0.02em; color:#1A1410; text-wrap:pretty">Verujem da ljudi ne beže od zubara zbog zuba, nego zbog osećaja.</p>
+        </div>
+
+        <p style="margin:32px 0 0; max-width:42ch; font-family:'Instrument Sans',sans-serif; font-size:17px; line-height:1.7; color:#6B5D52; text-wrap:pretty">Zovem se Nemanja Međedović. Deset godina radim u stolici, a Obrenovac je moj grad — pola pacijenata poznajem s ulice. Ordinaciju u Miloša Obrenovića 118 vodim po jednom pravilu: prvo objasnim, pa onda radim.</p>
+
+        <div style="display:flex; align-items:stretch; gap:32px; margin-top:40px; padding:24px 0; border-top:1px solid rgba(0,0,0,0.05); border-bottom:1px solid rgba(0,0,0,0.05); width:100%; flex-wrap:wrap">
+          <div style="display:flex; flex-direction:column; gap:6px">
+            <span style="font-family:'Instrument Serif',serif; font-size:24px; line-height:1; color:#1A1410">10+</span>
+            <span style="font-family:'Instrument Sans',sans-serif; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8B7E74">godina prakse</span>
+          </div>
+          <span style="width:1px; background:rgba(0,0,0,0.07); flex:none"></span>
+          <div style="display:flex; flex-direction:column; gap:6px">
+            <span style="font-family:'Instrument Serif',serif; font-size:24px; line-height:1; color:#1A1410">1200+</span>
+            <span style="font-family:'Instrument Sans',sans-serif; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8B7E74">zadovoljnih pacijenata</span>
+          </div>
+          <span style="width:1px; background:rgba(0,0,0,0.07); flex:none"></span>
+          <div style="display:flex; flex-direction:column; gap:6px">
+            <span style="font-family:'Instrument Serif',serif; font-size:24px; line-height:1; color:#1A1410">5.0★</span>
+            <span style="font-family:'Instrument Sans',sans-serif; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8B7E74">prosečna ocena</span>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:16px; margin-top:40px; flex-wrap:wrap">
+          <a href="#kontakt" style="display:inline-flex; align-items:center; background:#1A1410; color:#FFFBF7; padding:16px 28px; border-radius:100px; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:14px; white-space:nowrap; transition:transform 300ms ease, box-shadow 300ms ease, background 300ms ease" style-hover="background:#24201E; color:#FFFBF7; transform:translateY(-2px); box-shadow:0 12px 24px rgba(0,0,0,0.12)">Zakaži pregled kod doktora →</a>
+          <a href="https://www.instagram.com/dr_medjed/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:10px; border:1px solid #D9CFC5; color:#6B5D52; padding:16px 28px; border-radius:100px; font-family:'Instrument Sans',sans-serif; font-size:14px; white-space:nowrap; transition:border-color 300ms ease, color 300ms ease" style-hover="border-color:#1A1410; color:#1A1410">
+            <span style="width:15px; height:15px; border:1.5px solid currentColor; border-radius:5px; position:relative; flex:none"><span style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:6px; height:6px; border:1.5px solid currentColor; border-radius:50%"></span></span>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="cenovnik" data-screen-label="Cenovnik" style="background:#EFE8DE; padding:clamp(64px,9vw,110px) clamp(20px,4vw,48px)">
+    <div style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:clamp(32px,4vw,64px); align-items:start">
+      <div style="position:sticky; top:120px; display:flex; flex-direction:column; gap:20px">
+        <h2 style="margin:0; font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.025em; font-size:clamp(28px,3.2vw,44px); line-height:1.14; color:#3D2B1F">Cenovnik</h2>
+        <p style="margin:0; font-size:16.5px; line-height:1.7; color:#6B5843">Cenu čuješ na prvom pregledu, pre rada. Akcija povodom otvaranja važi za prvih 30 pacijenata.</p>
+        <span style="margin-top:8px; padding-top:20px; border-top:1px solid rgba(61,43,31,0.18); font-family:'Instrument Sans',sans-serif; font-size:14px; line-height:1.7; color:#6B5843">Plan terapije dobijaš na papiru, sa cenama, pre nego što počnemo.</span>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:28px">
+        <div style="background:#3D2B1F; color:#F5F1EB; border-radius:22px; padding:clamp(24px,5vw,34px) clamp(22px,4vw,32px); display:flex; align-items:flex-start; justify-content:space-between; gap:28px; flex-wrap:wrap">
+          <div style="display:flex; flex-direction:column; gap:12px">
+            <span style="font-size:12.5px; letter-spacing:0.2em; text-transform:uppercase; color:#C4A985">Paket</span>
+            <span style="font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.02em; font-size:29px; line-height:1.2">Kompletan tretman osmeha</span>
+            <span style="font-size:15.5px; line-height:1.7; color:#D6C8B6">Uklanjanje kamenca, poliranje i profesionalno izbeljivanje obe vilice.</span>
+          </div>
+          <span style="font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.02em; font-size:clamp(40px,8vw,54px); line-height:0.95; color:#E9DCCF">85 €</span>
+        </div>
+        <div style="display:flex; flex-direction:column">
+          <sc-for list="{{ cenovnik }}" as="c" hint-placeholder-count="6">
+            <div style="display:flex; align-items:baseline; justify-content:space-between; gap:24px; padding:16px 0; border-top:1px solid rgba(61,43,31,0.18)">
+              <span style="font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.02em; font-size:21px; color:#3D2B1F">{{ c.naziv }}</span>
+              <span style="font-size:14.5px; color:#8A7256; white-space:nowrap">{{ c.cena }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <p style="margin:0; font-size:13px; line-height:1.6; color:#9A8974; font-family:ui-monospace,SFMono-Regular,Menlo,monospace">Pošaljite cenovnik i upisujem tačne iznose.</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Recenzije" style="background:#F5F1EB; padding:clamp(64px,9vw,110px) clamp(20px,4vw,48px)">
+    <div style="max-width:1180px; margin:0 auto; display:flex; flex-direction:column; gap:48px">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:32px; flex-wrap:wrap">
+        <h2 style="margin:0; font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.025em; font-size:clamp(28px,3.2vw,44px); line-height:1.14; color:#3D2B1F">Šta kažu pacijenti</h2>
+        <span style="font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#9A8974">Google recenzije</span>
+      </div>
+      <div style="overflow:hidden">
+        <div style="{{ stilTrake }}">
+          <sc-for list="{{ recenzije }}" as="r" hint-placeholder-count="3">
+            <div style="flex:0 0 100%; padding-right:20px; box-sizing:border-box">
+              <div style="background:#EFE8DE; border-radius:20px; padding:clamp(26px,5vw,44px) clamp(24px,5vw,46px); display:flex; flex-direction:column; gap:22px; min-height:260px">
+                <span style="font-size:15px; letter-spacing:0.16em; color:#C4A985">★★★★★</span>
+                <p style="margin:0; font-family:'Manrope',sans-serif; font-weight:300; font-size:22px; line-height:1.6; color:#4E3B2C; text-wrap:pretty">{{ r.tekst }}</p>
+                <span style="margin-top:auto; font-size:14.5px; letter-spacing:0.04em; color:#8A7256">{{ r.ime }}</span>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:24px; margin-top:-24px">
+        <div style="display:flex; align-items:center; gap:10px">
+          <sc-for list="{{ tacke }}" as="t" hint-placeholder-count="3">
+            <span onClick="{{ t.klik }}" style="{{ t.stil }}"></span>
+          </sc-for>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px">
+          <span onClick="{{ nazad }}" style="width:44px; height:44px; border-radius:50%; border:1px solid rgba(61,43,31,0.2); display:flex; align-items:center; justify-content:center; font-size:16px; color:#3D2B1F; cursor:pointer; transition:background 200ms ease" style-hover="background:#EFE8DE">←</span>
+          <span onClick="{{ napred }}" style="width:44px; height:44px; border-radius:50%; border:1px solid rgba(61,43,31,0.2); display:flex; align-items:center; justify-content:center; font-size:16px; color:#3D2B1F; cursor:pointer; transition:background 200ms ease" style-hover="background:#EFE8DE">→</span>
+        </div>
+      </div>
+      <p style="margin:0; font-size:13px; line-height:1.6; color:#9A8974; font-family:ui-monospace,SFMono-Regular,Menlo,monospace">Pošaljite tri prave Google recenzije sa imenima i zamenjujem ove.</p>
+    </div>
+  </section>
+
+  <section id="kontakt" data-screen-label="Dogovor" style="position:relative; overflow:hidden; min-height:85vh; background:#AFC8CB; padding:clamp(70px,9vw,120px) clamp(20px,4vw,48px)">
+    <span style="position:absolute; z-index:1; right:-4vw; top:34%; transform:rotate(-5deg); font-family:'Instrument Serif',serif; font-weight:600; font-size:20vw; line-height:0.8; color:#FFFFFF; opacity:0.06; filter:blur(2px); pointer-events:none; white-space:nowrap">ZAKAŽI</span>
+    <div style="position:relative; z-index:2; max-width:1180px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:40px; align-items:start">
+      <div style="min-width:0; display:flex; flex-direction:column">
+        <h2 style="margin:0; max-width:400px; font-family:'Manrope',sans-serif; font-weight:700; font-size:clamp(44px,5.6vw,72px); line-height:0.9; color:#3D2B1F; text-wrap:balance">Hajde da se dogovorimo</h2>
+        <p style="margin:24px 0 64px; max-width:360px; font-size:16px; line-height:1.6; color:rgba(43,27,18,0.55)">Ostavi poruku u jednoj rečenici, mi zovemo nazad za 30 minuta. Bez spama, bez obaveza.</p>
+        <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; max-width:100%">
+          <span style="display:inline-flex; align-items:center; gap:10px; flex:1 1 220px; min-width:200px">
+          <span style="flex:none; font-family:'Instrument Serif',serif; font-weight:500; font-size:20px; letter-spacing:-0.3px; white-space:nowrap; color:rgba(43,27,18,0.8)">Ja sam</span>
+          <input value="{{ forma.ime }}" onChange="{{ postavi.ime }}" placeholder="ime i prezime" style="flex:1 1 150px; min-width:130px; background:#FFFFFF; border:none; border-radius:999px; padding:14px 18px; font-size:15px; outline:none" style-focus="box-shadow:0 0 0 2px #3D2B1F" />
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:10px; flex:1 1 220px; min-width:200px">
+          <span style="flex:none; font-family:'Instrument Serif',serif; font-weight:500; font-size:20px; letter-spacing:-0.3px; white-space:nowrap; color:rgba(43,27,18,0.8)">za</span>
+          <select value="{{ forma.usluga }}" onChange="{{ postavi.usluga }}" style="flex:1 1 150px; min-width:130px; background:#FFFFFF; border:none; border-radius:999px; padding:14px 18px; font-size:15px; outline:none" style-focus="box-shadow:0 0 0 2px #3D2B1F">
+            <sc-for list="{{ opcije }}" as="o" hint-placeholder-count="5">
+              <option value="{{ o }}">{{ o }}</option>
+            </sc-for>
+          </select>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:10px; flex:1 1 220px; min-width:200px">
+          <span style="flex:none; font-family:'Instrument Serif',serif; font-weight:500; font-size:20px; letter-spacing:-0.3px; white-space:nowrap; color:rgba(43,27,18,0.8)">tel</span>
+          <input value="{{ forma.telefon }}" onChange="{{ postavi.telefon }}" placeholder="06x xxx xx xx" style="flex:1 1 150px; min-width:130px; background:#FFFFFF; border:none; border-radius:999px; padding:14px 18px; font-size:15px; outline:none" style-focus="box-shadow:0 0 0 2px #3D2B1F" />
+          </span>
+        </div>
+        <button onClick="{{ posalji }}" style="align-self:flex-start; margin-top:56px; cursor:pointer; border:none; background:#FFFFFF; color:#2B1B12; font-size:17px; font-weight:600; border-radius:999px; padding:22px 40px; box-shadow:0 4px 20px rgba(0,0,0,0.1); transition:transform 160ms ease" style-hover="transform:scale(1.02)">{{ dugmeUpit }}</button>
+        <span style="margin-top:12px; font-size:12px; letter-spacing:0.04em; color:rgba(43,27,18,0.55)">Odgovaramo za 30 min • Bez spama</span>
+        <div style="display:flex; align-items:center; gap:16px; margin-top:56px">
+          <span style="width:44px; height:1px; background:rgba(61,43,31,0.35); display:block"></span>
+          <span style="font-size:12.5px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(61,43,31,0.65)">Ili pozovi direktno</span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:20px">
+          <a href="viber://chat?number=%2B381631399997" style="display:inline-flex; align-items:center; white-space:nowrap; background:rgba(255,255,255,0.35); color:#3D2B1F; border-radius:999px; padding:13px 22px; font-size:14.5px" style-hover="background:#FFFFFF; color:#3D2B1F">Viber</a>
+          <a href="https://wa.me/381631399997" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; white-space:nowrap; background:rgba(255,255,255,0.35); color:#3D2B1F; border-radius:999px; padding:13px 22px; font-size:14.5px" style-hover="background:#FFFFFF; color:#3D2B1F">WhatsApp</a>
+          <a href="https://www.instagram.com/dr_medjed/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; white-space:nowrap; background:rgba(255,255,255,0.35); color:#3D2B1F; border-radius:999px; padding:13px 22px; font-size:14.5px" style-hover="background:#FFFFFF; color:#3D2B1F">Instagram</a>
+          <a href="tel:+381631399997" style="display:inline-flex; align-items:center; white-space:nowrap; background:rgba(255,255,255,0.35); color:#3D2B1F; border-radius:999px; padding:13px 22px; font-size:14.5px" style-hover="background:#FFFFFF; color:#3D2B1F">063 139 99 97</a>
+        </div>
+      </div>
+      <div style="{{ stilKontaktPraznina }}"></div>
+    </div>
+    <div style="{{ stilKontaktDoktor }}">
+      <div style="position:absolute; right:12px; left:auto; width:min(290px,74%); bottom:28px; background:rgba(255,255,255,0.88); backdrop-filter:blur(20px); border-radius:16px; padding:16px 18px; display:flex; flex-direction:column; gap:4px">
+        <span style="font-size:15.5px; color:#3D2B1F">Otvoreno 24/7</span>
+        <span style="font-size:14px; color:#8A7256">Hitni slučajevi bez zakazivanja</span>
+        <span style="font-size:14px; color:#6E979D">Estetska medicina, petkom</span>
+      </div>
+    </div>
+  </section>
+
+  <footer id="kontakt-detalji" data-screen-label="Kontakt" style="background:#3D2B1F; color:#F5F1EB; padding:clamp(64px,9vw,110px) clamp(20px,4vw,48px) 44px">
+    <div style="max-width:1180px; margin:0 auto; display:flex; flex-direction:column; gap:56px">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:clamp(36px,4vw,56px); align-items:start">
+        <div style="display:flex; flex-direction:column; gap:28px">
+          <h2 style="margin:0; font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.025em; font-size:clamp(30px,3.6vw,48px); line-height:1.1; color:#F5F1EB">Zakaži pregled</h2>
+          <div style="display:flex; flex-direction:column">
+            <div style="display:flex; justify-content:space-between; gap:20px; padding:16px 0; border-top:1px solid rgba(245,241,235,0.22)">
+              <span style="font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#C4A985">Telefon</span>
+              <a href="tel:+381631399997" style="font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.02em; font-size:22px; color:#F5F1EB" style-hover="color:#E9DCCF">063 / 139 99 97</a>
+            </div>
+            <div style="display:flex; justify-content:space-between; gap:20px; padding:16px 0; border-top:1px solid rgba(245,241,235,0.22)">
+              <span style="font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#C4A985">Adresa</span>
+              <span style="font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.02em; font-size:22px; text-align:right">Miloša Obrenovića 118<br />Obrenovac</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; gap:20px; padding:16px 0; border-top:1px solid rgba(245,241,235,0.22)">
+              <span style="font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#C4A985">Instagram</span>
+              <a href="https://www.instagram.com/dr_medjed/" target="_blank" rel="noopener" style="font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.02em; font-size:22px; color:#F5F1EB" style-hover="color:#E9DCCF">@_dr_medjed</a>
+            </div>
+            <div style="display:flex; justify-content:space-between; gap:20px; padding:16px 0; border-top:1px solid rgba(245,241,235,0.22); border-bottom:1px solid rgba(245,241,235,0.22)">
+              <span style="font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#C4A985">Radno vreme</span>
+              <span style="font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.02em; font-size:22px; text-align:right">Otvoreno 24 sata<br />svih 7 dana</span>
+            </div>
+          </div>
+          <a href="viber://chat?number=%2B381631399997" style="display:inline-flex; align-self:flex-start; align-items:center; white-space:nowrap; background:#E9DCCF; color:#3D2B1F; padding:17px 32px; border-radius:999px; font-size:14.5px; letter-spacing:0.03em" style-hover="background:#FFFFFF; color:#3D2B1F">Zakaži preko Vibera</a>
+        </div>
+        <div style="position:relative; height:clamp(300px,52vw,420px); border-radius:22px; overflow:hidden; background:#4A3628">
+          <iframe src="https://www.google.com/maps?q=Milo%C5%A1a+Obrenovi%C4%87a+118,+Obrenovac,+Srbija&z=16&output=embed" title="Mapa: Miloša Obrenovića 118, Obrenovac" loading="lazy" referrerPolicy="no-referrer-when-downgrade" style="width:100%; height:100%; border:0; display:block; filter:saturate(0.85)"></iframe>
+          <a href="https://www.google.com/maps/search/?api=1&query=Milo%C5%A1a+Obrenovi%C4%87a+118+Obrenovac" target="_blank" rel="noopener" style="position:absolute; left:16px; bottom:16px; background:rgba(61,43,31,0.92); color:#F5F1EB; padding:11px 20px; border-radius:999px; font-size:13.5px; letter-spacing:0.02em" style-hover="background:#3D2B1F">Otvori u Google mapama →</a>
+        </div>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; padding-top:26px; border-top:1px solid rgba(245,241,235,0.18)">
+        <div style="display:flex; align-items:center; gap:12px">
+          <span style="width:46px; height:46px; border-radius:50%; background:#FFFFFF; display:flex; align-items:center; justify-content:center; flex:none"><img src="assets/logo.png" alt="Dr Međed" style="width:42px; height:42px; border-radius:50%; display:block" /></span>
+          <span style="font-family:'Manrope',sans-serif; font-weight:300; font-size:19px; color:#F5F1EB">Dr Međed</span>
+        </div>
+        <span style="font-size:13.5px; color:#B9A794">Privatna stomatološka ordinacija • Miloša Obrenovića 118 • <a href="tel:+381631399997" style="color:#F5F1EB" style-hover="color:#C4A985">063 / 139 99 97</a></span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+class Component extends DCLogic {
+  state = { p: 0, headerH: 76, vw: 1440, hedVidljiv: true, rec: 0, poz1: 50, poz2: 50, ime: '', usluga: 'besplatan pregled', telefon: '', poslato: false };
+
+  componentDidMount() {
+    this.onScroll = () => {
+      const el = document.querySelector('[data-screen-label="Hero scroll"]');
+      if (!el) return;
+      const r = el.getBoundingClientRect();
+      const raspon = r.height - window.innerHeight;
+      const p = raspon > 0 ? Math.max(0, Math.min(1, -r.top / raspon)) : 0;
+      const h = document.querySelector('header');
+      const hh = h ? Math.round(h.getBoundingClientRect().height) : 76;
+      const vw = document.documentElement.clientWidth;
+      const t = document.getElementById('hero-tekst');
+      const th = t ? Math.round(t.getBoundingClientRect().height) : 0;
+      const y = window.scrollY || window.pageYOffset || 0;
+      const prethodni = this.lastY == null ? y : this.lastY;
+      let hedVidljiv = this.state.hedVidljiv;
+      if (y < 80) hedVidljiv = true;
+      else if (y - prethodni > 6) hedVidljiv = false;
+      else if (prethodni - y > 6) hedVidljiv = true;
+      this.lastY = y;
+      const izmene = {};
+      if (hedVidljiv !== this.state.hedVidljiv) izmene.hedVidljiv = hedVidljiv;
+      const zbijen = y > 20;
+      if (zbijen !== this.state.hedZbijen) izmene.hedZbijen = zbijen;
+      if (th && Math.abs(th - (this.state.tekstH || 0)) > 2) izmene.tekstH = th;
+      if (Math.abs(p - this.state.p) > 0.002) izmene.p = p;
+      if (hh !== this.state.headerH) izmene.headerH = hh;
+      if (vw !== this.state.vw) izmene.vw = vw;
+      if (Object.keys(izmene).length) this.setState(izmene);
+    };
+    window.addEventListener('scroll', this.onScroll, true);
+    window.addEventListener('resize', this.onScroll);
+    document.addEventListener('fullscreenchange', this.onScroll);
+    const proces = document.getElementById('proces');
+    if (proces && window.IntersectionObserver) {
+      this.io = new IntersectionObserver((zapisi) => {
+        if (zapisi.some((z) => z.isIntersecting) && !this.state.procesVidljiv) this.setState({ procesVidljiv: true });
+      }, { threshold: 0.2 });
+      this.io.observe(proces);
+    } else {
+      this.setState({ procesVidljiv: true });
+    }
+    this.raf = setInterval(this.onScroll, 100);
+    this.recTimer = setInterval(() => this.setState((s) => ({ rec: (s.rec + 1) % 3 })), 6500);
+    this.onScroll();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll, true);
+    window.removeEventListener('resize', this.onScroll);
+    document.removeEventListener('fullscreenchange', this.onScroll);
+    clearInterval(this.raf);
+    clearInterval(this.recTimer);
+    if (this.io) this.io.disconnect();
+  }
+
+  renderVals() {
+    const p = this.state.p;
+    const clamp = (v) => Math.max(0, Math.min(1, v));
+    const ease = (t) => 1 - Math.pow(1 - clamp(t), 3);
+    const mix = (a, b, t) => a + (b - a) * clamp(t);
+    const hex = (a, b, t) => {
+      const pa = [1, 3, 5].map((i) => parseInt(a.substr(i, 2), 16));
+      const pb = [1, 3, 5].map((i) => parseInt(b.substr(i, 2), 16));
+      return 'rgb(' + pa.map((v, i) => Math.round(mix(v, pb[i], t))).join(',') + ')';
+    };
+
+    const f1 = ease(clamp(p / 0.75));
+    const tekst = clamp(1 - p / 0.4);
+    const f2 = ease((p - 0.6) / 0.22);
+    const f3 = ease((p - 0.8) / 0.2);
+    const pilula = clamp((f1 - 0.55) / 0.35) * clamp(1 - f2 * 2);
+    const sirina2 = mix(100, 57, f3);
+    const visina2 = mix(100, 56, f3);
+    const radius2 = mix(0, 28, f3);
+    const senka2 = f3 > 0.05 ? '0 ' + Math.round(mix(0, 34, f3)) + 'px ' + Math.round(mix(0, 76, f3)) + 'px rgba(43,30,22,' + mix(0, 0.24, f3).toFixed(3) + ')' : 'none';
+    const potpis = clamp((f3 - 0.45) / 0.4);
+
+    const pozadina = hex('#FFFBF7', '#F5F1EB', clamp((p - 0.7) / 0.3));
+    const sirina1 = mix(48, 100, f1);
+    const visina1 = mix(68, 100, f1);
+    const visinaSlike = this.state.tekstH ? mix(this.state.tekstH, window.innerHeight, f1) : 0;
+    const radius1 = mix(40, 0, f1);
+    const pozX = mix(58, 50, f1);
+    const pozY = mix(28, 50, f1);
+
+    const vw = this.state.vw || 1440;
+    const mob = vw < 820;
+    const hh = this.state.headerH || 76;
+    const contentW = Math.min(vw, 1440);
+    const sideGap = (vw - contentW) / 2;
+
+    return {
+      stilHeroObuhvat: mob ? 'position:relative' : 'position:relative; height:320vh',
+      stilNavLinkovi: mob ? 'display:none' : 'display:flex; align-items:center; gap:30px; flex-wrap:nowrap',
+      stilPozovi: mob ? "display:inline-flex; align-items:center; border:1px solid rgba(26,20,16,0.18); border-radius:999px; padding:11px 16px; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:13px; letter-spacing:0.02em; white-space:nowrap; color:#1A1410" : 'display:none',
+      stilKontaktPraznina: mob ? 'display:none' : 'min-height:420px',
+      stilKontaktDoktor: mob
+        ? "position:relative; z-index:3; width:100%; height:52vw; min-height:260px; margin-top:36px; background-image:url('assets/kontakt-doktor.png'); background-size:contain; background-repeat:no-repeat; background-position:right bottom"
+        : "position:absolute; z-index:3; right:0; bottom:0; width:min(44vw,540px); height:min(660px,88%); pointer-events:none; background-image:url('assets/kontakt-doktor.png'); background-size:contain; background-repeat:no-repeat; background-position:right bottom",
+      hedYPomeraj: this.state.hedVidljiv ? '0px' : '-' + ((this.state.headerH || 76) + 8) + 'px',
+      stilDoktorSlika: `position:absolute; inset:0; background-image:url(assets/doktor-portret.png); background-size:cover; background-position:50% 30%; transform:scale(${this.state.procesVidljiv ? 1 : 1.08}); transition:transform 1200ms cubic-bezier(0.16,1,0.3,1)`,
+      stilHedera: `position:fixed; top:0; left:0; right:0; z-index:50; width:100%; background:${this.state.hedZbijen ? 'rgba(255,251,247,0.8)' : '#FFFBF7'}; ${this.state.hedZbijen ? 'backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); box-shadow:0 1px 3px rgba(0,0,0,0.05);' : ''} border-bottom:1px solid rgba(0,0,0,0.06); transform:translateY(${this.state.hedVidljiv ? '0px' : '-' + ((this.state.headerH || 76) + 8) + 'px'}); transition:transform 500ms cubic-bezier(0.16,1,0.3,1), background 500ms ease, box-shadow 500ms ease`,
+      stilHedTraka: `max-width:1440px; margin:0 auto; padding:${this.state.hedZbijen ? '8px' : '14px'} 28px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:nowrap; transition:padding 500ms cubic-bezier(0.16,1,0.3,1)`,
+      scena: mob ? `position:relative; height:auto; background:#FFFBF7; display:flex; flex-direction:column; gap:26px; padding:${hh + 30}px 20px 52px` : `${p < 0.999 ? 'position:fixed; top:0; left:0; right:0; z-index:1' : 'position:absolute; bottom:0; left:0; right:0'}; height:100vh; overflow:hidden; background:${pozadina}; display:flex; align-items:center; justify-content:center; transition:background 120ms linear`,
+      stilTeksta: mob ? 'position:relative; z-index:8; width:100%; display:flex; flex-direction:column; align-items:flex-start' : `position:absolute; z-index:8; top:calc(50% + ${((this.state.headerH || 76) / 2).toFixed(0)}px); left:${(sideGap + 28).toFixed(0)}px; width:${Math.min(560, vw * 0.45).toFixed(0)}px; transform:translateY(calc(-50% + ${mix(0, -80, 1 - tekst).toFixed(1)}px)); display:flex; flex-direction:column; align-items:flex-start; opacity:${tekst.toFixed(3)}; pointer-events:${tekst > 0.4 ? 'auto' : 'none'}`,
+      stilSlike1: mob ? 'position:relative; z-index:3; width:100%; height:58vh; min-height:340px; border-radius:26px; overflow:hidden; background-color:#CDEBE0; background-image:url(assets/hero-pacijent-nova.webp); background-size:cover; background-position:58% 26%; box-shadow:0 20px 50px rgba(43,30,22,0.14)' : `position:absolute; z-index:3; top:calc(50% + ${mix((this.state.headerH || 76) / 2, 0, f1).toFixed(0)}px); transform:translateY(-50%); right:${mix(sideGap + 28, 0, f1).toFixed(0)}px; width:${(vw * sirina1 / 100).toFixed(0)}px; height:${visinaSlike ? visinaSlike.toFixed(0) + 'px' : visina1.toFixed(2) + 'vh'}; border-radius:${radius1.toFixed(1)}px; overflow:hidden; background-color:#CDEBE0; background-image:url(assets/hero-pacijent-nova.webp); background-size:cover; background-position:${pozX.toFixed(1)}% ${pozY.toFixed(1)}%; box-shadow:${f1 < 0.9 ? '0 32px 80px rgba(43,30,22,0.14)' : 'none'}; opacity:${clamp(1 - f2).toFixed(3)}`,
+      stilKartice: mob ? 'display:none' : `position:absolute; z-index:4; width:${sirina2.toFixed(2)}vw; height:${visina2.toFixed(2)}vh; border-radius:${radius2.toFixed(1)}px; box-shadow:${senka2}; opacity:${clamp(f2).toFixed(3)}; pointer-events:none`,
+      stilSlike2: `position:absolute; inset:0; border:${mix(0, 12, f3).toFixed(1)}px solid #FFFFFF; border-radius:inherit; overflow:hidden; background-color:#CDEBE0; background-image:url(assets/hero-solo-studio.webp); background-size:cover; background-position:34% 30%; box-shadow:inset 0 0 0 1px rgba(43,30,22,0.06)`,
+      stilPotpisa: `position:absolute; left:-200px; bottom:46%; width:min(300px,68vw); background:rgba(255,251,247,0.82); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.6); padding:20px 22px; border-radius:24px; box-shadow:0 34px 80px rgba(43,30,22,0.3), 0 6px 18px rgba(43,30,22,0.14); opacity:${potpis.toFixed(3)}; transform:translateY(${mix(24, 0, potpis).toFixed(1)}px)`,
+      stilPilule: mob ? 'display:none' : `position:absolute; z-index:6; left:50%; bottom:${mix(56, 44, f1).toFixed(0)}px; transform:translateX(-50%) translateY(${mix(14, 0, pilula).toFixed(1)}px); display:flex; align-items:center; gap:12px; background:#FFFFFF; color:#2B1E16; border-radius:999px; padding:14px 26px; font-family:'Instrument Sans',sans-serif; font-size:14px; letter-spacing:0.02em; white-space:nowrap; box-shadow:0 12px 34px rgba(43,30,22,0.16); opacity:${pilula.toFixed(3)}; pointer-events:${pilula > 0.6 ? 'auto' : 'none'}`,
+      stilStrelice: `position:absolute; left:64px; bottom:34px; z-index:7; display:flex; flex-direction:column; align-items:flex-start; gap:8px; color:#6B5E55; opacity:${clamp(1 - p * 6).toFixed(3)}; pointer-events:none`,
+      opcije: ['besplatan pregled', 'beljenje', 'implanti', 'bol zuba', 'za dete', 'estetska intervencija', 'nešto drugo'],
+      forma: { ime: this.state.ime, usluga: this.state.usluga, telefon: this.state.telefon },
+      postavi: {
+        ime: (e) => this.setState({ ime: e.target.value, poslato: false }),
+        usluga: (e) => this.setState({ usluga: e.target.value, poslato: false }),
+        telefon: (e) => this.setState({ telefon: e.target.value, poslato: false })
+      },
+      dugmeUpit: this.state.poslato ? 'Poslato, zovemo vas uskoro' : 'Pošalji upit, besplatno →',
+      posalji: () => this.setState({ poslato: true }),
+      estetika: [
+        { naziv: 'Botoks', opis: 'Mimičke bore na čelu, između očiju i oko očiju. Odmoran izgled, bez gubitka mimike.', trajanje: '30 min', slika: 'assets/ba-botoks-posle.jpg', pre: 'assets/ba-botoks-pre.jpg' },
+        { naziv: 'Hijaluron', opis: 'Volumen i konture, u malim količinama i u više koraka.', trajanje: '45 min', slika: 'assets/ba-hijaluron-posle.jpg', pre: 'assets/ba-hijaluron-pre.jpg' },
+        { naziv: 'Skin booster', opis: 'Hijaluron za kvalitet kože: hidratacija, ten i elastičnost.', trajanje: '40 min', slika: 'assets/kart-skinbooster-4.jpg' },
+        { naziv: 'AquaShine PTX', opis: 'Biorevitalizacija peptidima: stimulacija kolagena i smanjenje bora.', trajanje: '45 min', slika: 'assets/ba-aquashine-posle.jpg', pre: 'assets/ba-aquashine-pre.jpg' }
+      ].map((e) => Object.assign({}, e, {
+        imaBA: false,
+        stilSlike: 'position:relative; overflow:hidden; width:100%; height:210px; background-image:url(' + e.slika + '); background-size:cover; background-position:center',
+        stilPre: e.pre ? 'position:absolute; inset:0; background-image:url(' + e.pre + '); background-size:cover; background-position:center; animation:baWipe 7s cubic-bezier(.5,.05,.5,.95) infinite' : ''
+      })),
+      poz1: this.state.poz1,
+      poz2: this.state.poz2,
+      stilPre1: `position:absolute; inset:0; background-image:url(assets/ba-aquashine-pre.jpg); background-size:cover; background-position:center; ${this.state.rucno1 ? 'clip-path:inset(0 ' + (100 - this.state.poz1).toFixed(1) + '% 0 0)' : 'animation:baWipe 7s cubic-bezier(.5,.05,.5,.95) infinite'}`,
+      stilLinija1: `position:absolute; top:0; bottom:0; width:1px; background:rgba(255,255,255,0.9); ${this.state.rucno1 ? 'left:' + this.state.poz1 + '%' : 'animation:baLinija 7s cubic-bezier(.5,.05,.5,.95) infinite'}`,
+      stilPre2: `position:absolute; inset:0; background-image:url(assets/ba-botoks-pre.jpg); background-size:cover; background-position:center; ${this.state.rucno2 ? 'clip-path:inset(0 ' + (100 - this.state.poz2).toFixed(1) + '% 0 0)' : 'animation:baWipe 7s cubic-bezier(.5,.05,.5,.95) infinite 0.9s'}`,
+      stilLinija2: `position:absolute; top:0; bottom:0; width:1px; background:rgba(255,255,255,0.9); ${this.state.rucno2 ? 'left:' + this.state.poz2 + '%' : 'animation:baLinija 7s cubic-bezier(.5,.05,.5,.95) infinite 0.9s'}`,
+      klip1: `position:absolute; top:0; left:0; height:100%; overflow:hidden; width:${this.state.poz1}%; border-right:1px solid rgba(255,255,255,0.9)`,
+      klip2: `position:absolute; top:0; left:0; height:100%; overflow:hidden; width:${this.state.poz2}%; border-right:1px solid rgba(255,255,255,0.9)`,
+      stilPosle1: `position:absolute; top:0; left:0; height:100%; width:${(10000 / Math.max(this.state.poz1, 1)).toFixed(2)}%; background-image:url(assets/ba-aquashine-pre.jpg); background-size:cover; background-position:center`,
+      stilPosle2: `position:absolute; top:0; left:0; height:100%; width:${(10000 / Math.max(this.state.poz2, 1)).toFixed(2)}%; background-image:url(assets/ba-botoks-pre.jpg); background-size:cover; background-position:center`,
+      poz3: this.state.poz3 == null ? 50 : this.state.poz3,
+      stilPre3: `position:absolute; inset:0; background-image:url(assets/ba-zubi-pre.jpg); background-size:cover; background-position:center 42%; clip-path:inset(0 ${(100 - (this.state.poz3 == null ? 50 : this.state.poz3)).toFixed(1)}% 0 0)`,
+      stilLinija3: `position:absolute; top:0; bottom:0; width:2px; background:#C9B896; left:${this.state.poz3 == null ? 50 : this.state.poz3}%`,
+      menjaj3: (e) => this.setState({ poz3: Number(e.target.value) }),
+      menjaj1: (e) => this.setState({ poz1: Number(e.target.value), rucno1: true }),
+      menjaj2: (e) => this.setState({ poz2: Number(e.target.value), rucno2: true }),
+      usluge: [
+        { znak: 'assets/ic-estetska.png', naziv: 'Estetska stomatologija', opis: 'Fasete, kompozitne nadoknade i korekcija oblika prednjih zuba.' },
+        { znak: 'assets/ic-implant.png', naziv: 'Implantologija', opis: 'Zamena izgubljenog zuba, planiranje na osnovu 3D snimka.' },
+        { znak: 'assets/ic-krunice.png', naziv: 'Bezmetalne krunice', opis: 'Cirkonijum-keramika bez metalne baze, sa probom pre cementiranja.' },
+        { znak: 'assets/ic-decija.png', naziv: 'Dečja stomatologija', opis: 'Prvi pregled bez pritiska, zalivanje fisura, mlečni zubi.' },
+        { znak: 'assets/ic-dezurna.png', naziv: 'Dežurna stomatologija 24/7', opis: 'Bol, ispao ispun ili povreda zuba, dolazite van rasporeda.' }
+      ].map((u) => Object.assign({}, u, { znakStil: 'width:32px; height:32px; background-image:url(' + u.znak + '); background-size:contain; background-repeat:no-repeat; background-position:center; transition:transform 240ms ease' })),
+      cenovnik: [
+        { naziv: 'Prvi pregled i plan', cena: 'na upit' },
+        { naziv: 'Uklanjanje kamenca i poliranje', cena: 'na upit' },
+        { naziv: 'Profesionalno izbeljivanje', cena: 'na upit' },
+        { naziv: 'Fasete, po zubu', cena: 'na upit' },
+        { naziv: 'Krunica od cirkonijuma', cena: 'na upit' },
+        { naziv: 'Hitna intervencija, 24h', cena: 'na upit' }
+      ],
+      stilTrake: `display:flex; width:100%; transform:translateX(-${(this.state.rec || 0) * 100}%); transition:transform 620ms cubic-bezier(.4,.8,.2,1)`,
+      tacke: [0, 1, 2].map((i) => ({
+        stil: `width:${i === (this.state.rec || 0) ? '26px' : '8px'}; height:8px; border-radius:999px; background:${i === (this.state.rec || 0) ? '#8A7256' : 'rgba(61,43,31,0.22)'}; cursor:pointer; transition:width 320ms ease, background 320ms ease`,
+        klik: () => this.setState({ rec: i })
+      })),
+      nazad: () => this.setState((s) => ({ rec: (s.rec + 2) % 3 })),
+      napred: () => this.setState((s) => ({ rec: (s.rec + 1) % 3 })),
+      koraci: [
+        { broj: '01', naziv: 'Upoznavanje i sken', opis: 'Trideset minuta bez obaveza. Skeniramo, pričamo, bez bušilice.' },
+        { broj: '02', naziv: 'Plan koji razumeš', opis: 'Na srpskom, sa cenom odmah. Vidiš rezultat pre početka.' },
+        { broj: '03', naziv: 'Nežan rad', opis: 'Vi određujete tempo. Pauza kad god zatreba, samo podignete ruku.' }
+      ].map((k, i) => Object.assign({}, k, {
+        stilReda: `display:grid; grid-template-columns:clamp(50px,12vw,76px) 1fr; gap:clamp(16px,4vw,28px); align-items:start; padding:clamp(22px,4vw,30px) 0; border-top:1px solid rgba(255,255,255,0.15);${i === 2 ? ' border-bottom:1px solid rgba(255,255,255,0.15);' : ''} opacity:${this.state.procesVidljiv ? 1 : 0}; transform:translateY(${this.state.procesVidljiv ? '0' : '24px'}); transition:opacity 700ms ease ${(i * 0.15).toFixed(2)}s, transform 700ms cubic-bezier(.2,.7,.3,1) ${(i * 0.15).toFixed(2)}s, border-top-color 300ms ease`
+      })),
+      recenzije: [
+        { tekst: 'Došla sam sa strahom koji nosim godinama i prvi put izašla bez njega. Sve mi je objašnjeno pre rada i nije bilo bola.', ime: 'Jelena M.' },
+        { tekst: 'Došao je da me sastane čim su me pozvali u subotu i za nekoliko minuta je potpuno bezbolno rešio problem pritiska i upale izazvanih privremenom plombom. Komunikativan, strpljiv i sve dobro objašnjava. Sve preporuke.', ime: 'Peki' },
+        { tekst: 'Odlična usluga, bio je uslužan i dočekao nas je posle ponoći. Preporučujem!', ime: 'Uroš' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
