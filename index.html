@@ -7,6 +7,10 @@
 <meta charset="utf-8">
 <meta charset="utf-8">
 <meta charset="utf-8">
+<meta charset="utf-8">
+<meta charset="utf-8">
+<meta charset="utf-8">
+<meta charset="utf-8">
 <title>Dr Međed — stomatološka ordinacija, Obrenovac</title>
 <meta name="description" content="Nežna, moderna stomatologija u Obrenovcu. Dežurni 24/7, estetska stomatologija i estetska medicina. Miloša Obrenovića 118. Tel 063 139 99 97.">
 <meta name="theme-color" content="#FFFBF7">
@@ -79,10 +83,10 @@
     </div>
   </header>
 
-  <sc-if value="{{ jeMobilno }}" hint-placeholder-val="{{ false }}">
+  <sc-if value="{{ stickyVidljiv }}" hint-placeholder-val="{{ false }}">
     <a href="tel:+381631399997" style="{{ stilStickyCTA }}">
       <span style="width:8px; height:8px; border-radius:50%; background:#C9B896; flex:none; animation:lampica 1.8s ease-in-out infinite"></span>
-      <span>Pozovi 24/7 • 063 139 99 97</span>
+      <span>Dežurni 24/7 • Miloša Obrenovića 118</span>
     </a>
   </sc-if>
 
@@ -91,20 +95,32 @@
 
       <sc-if value="{{ jeMobilno }}" hint-placeholder-val="{{ false }}">
         <div style="{{ stilHeroMobSadrzaj }}">
-          <span style="display:inline-flex; align-items:center; gap:8px; align-self:flex-start; background:#CDEBE0; border-radius:999px; padding:8px 14px; font-size:11px; text-transform:uppercase; letter-spacing:0.08em; white-space:nowrap; color:#1A3A2E; animation:uvodPilula 700ms cubic-bezier(0.16,1,0.3,1) both">
-            <span style="width:6px; height:6px; border-radius:50%; background:#0A7A4C; flex:none; animation:lampica 1.8s ease-in-out infinite"></span>
-            <span>Nova ordinacija</span>
-          </span>
-          <h1 style="margin:16px 0 0; font-family:'Instrument Sans',sans-serif; font-weight:400; font-size:40px; line-height:0.98; letter-spacing:-0.02em; color:#2B1E16">
+          <div style="display:flex; align-items:center; flex-wrap:wrap; gap:8px; animation:uvodPilula 700ms cubic-bezier(0.16,1,0.3,1) both">
+            <span style="display:inline-flex; align-items:center; gap:7px; background:#D6E9E3; border-radius:999px; padding:7px 13px; font-size:10.5px; text-transform:uppercase; letter-spacing:0.12em; white-space:nowrap; color:#1A3A2E">
+              <span style="width:6px; height:6px; border-radius:50%; background:#0A7A4C; flex:none"></span>
+              <span>Nova ordinacija</span>
+            </span>
+            <a href="tel:+381631399997" style="display:inline-flex; align-items:center; gap:7px; background:#1A1410; border-radius:999px; padding:7px 13px; font-size:10.5px; font-weight:600; text-transform:uppercase; letter-spacing:0.12em; white-space:nowrap; color:#D9BC85">
+              <span style="width:6px; height:6px; border-radius:50%; background:#D9BC85; flex:none; animation:lampica 1.8s ease-in-out infinite"></span>
+              <span>Dežurni 24/7</span>
+            </a>
+          </div>
+          <h1 style="margin:16px 0 0; font-family:'Instrument Sans',sans-serif; font-weight:400; font-size:38px; line-height:0.95; letter-spacing:-0.02em; color:#2B1E16">
             <span style="display:block; opacity:0; animation:uvodNaslov 600ms cubic-bezier(0.16,1,0.3,1) 100ms both">Osmesi građeni</span>
             <span style="display:block; margin-top:2px; font-family:'Instrument Serif',serif; font-style:italic; font-weight:500; opacity:0; animation:uvodNaslov 600ms cubic-bezier(0.16,1,0.3,1) 220ms both">strpljenjem.</span>
           </h1>
           <div style="{{ stilSlikaMob }}"></div>
-          <div style="display:flex; align-items:center; flex-wrap:wrap; gap:9px; margin-top:20px; font-family:'Instrument Sans',sans-serif; font-size:15px; line-height:1.5; color:#6B5D52">
-            <span style="opacity:0.4; font-size:0.7em">●</span><span>Bez bola</span><span style="opacity:0.4; font-size:0.7em">●</span><span>Bez šablona</span><span style="opacity:0.4; font-size:0.7em">●</span><span>Plan koji razumeš</span>
+          <div style="display:flex; align-items:center; flex-wrap:wrap; gap:8px 12px; margin-top:20px; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:14px; line-height:1.4; color:rgba(26,20,16,0.7)">
+            <span style="display:inline-flex; align-items:center; gap:6px"><span style="width:6px; height:6px; border-radius:50%; background:rgba(26,20,16,0.2); flex:none"></span>Bez bola</span>
+            <span style="display:inline-flex; align-items:center; gap:6px"><span style="width:6px; height:6px; border-radius:50%; background:rgba(26,20,16,0.2); flex:none"></span>Bez šablona</span>
+            <span style="display:inline-flex; align-items:center; gap:6px"><span style="width:6px; height:6px; border-radius:50%; background:rgba(26,20,16,0.2); flex:none"></span>Plan koji razumeš</span>
           </div>
-          <a href="#kontakt" style="display:flex; align-items:center; justify-content:center; gap:10px; width:100%; height:56px; margin-top:24px; background:#1A1410; color:#FFFBF7; border-radius:999px; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:16px; opacity:0; animation:uvodDugme 700ms cubic-bezier(0.34,1.56,0.64,1) 420ms both">
+          <a href="#kontakt" style="display:flex; align-items:center; justify-content:center; gap:10px; width:100%; height:56px; margin-top:28px; background:#1A1410; color:#FFFBF7; border-radius:999px; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:16px; opacity:0; animation:uvodDugme 700ms cubic-bezier(0.34,1.56,0.64,1) 420ms both">
             <span>Zakaži pregled</span><span>→</span>
+          </a>
+          <a href="tel:+381631399997" style="display:flex; align-items:center; justify-content:center; gap:8px; width:100%; height:48px; margin-top:12px; color:#1A1410; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:15px">
+            <span style="width:8px; height:8px; border-radius:50%; background:#10B981; flex:none; animation:lampica 1.8s ease-in-out infinite"></span>
+            <span>Hitno? Pozovi dežurnog • 063 139 99 97 →</span>
           </a>
           <div style="margin-top:20px; background:#FFFFFF; border:1px solid #F1EAE2; border-radius:16px; padding:14px 16px">
             <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap">
@@ -127,10 +143,16 @@
 
       <sc-if value="{{ jeDesktop }}" hint-placeholder-val="{{ true }}">
       <div id="hero-tekst" style="{{ stilTeksta }}">
-        <span style="display:inline-flex; align-items:center; gap:8px; align-self:flex-start; background:#CDEBE0; border-radius:999px; padding:8px 14px; font-size:11px; text-transform:uppercase; letter-spacing:0.08em; white-space:nowrap; color:#1A3A2E; animation:uvodPilula 700ms cubic-bezier(0.16,1,0.3,1) both">
-          <span style="width:6px; height:6px; border-radius:50%; background:#0A7A4C; flex:none; animation:lampica 1.8s ease-in-out infinite"></span>
-          <span>Nova ordinacija</span>
-        </span>
+        <div style="display:flex; align-items:center; flex-wrap:wrap; gap:8px; align-self:flex-start; animation:uvodPilula 700ms cubic-bezier(0.16,1,0.3,1) both">
+          <span style="display:inline-flex; align-items:center; gap:8px; background:#CDEBE0; border-radius:999px; padding:8px 14px; font-size:11px; text-transform:uppercase; letter-spacing:0.08em; white-space:nowrap; color:#1A3A2E">
+            <span style="width:6px; height:6px; border-radius:50%; background:#0A7A4C; flex:none"></span>
+            <span>Nova ordinacija</span>
+          </span>
+          <a href="tel:+381631399997" style="display:inline-flex; align-items:center; gap:8px; background:#1A1410; border-radius:999px; padding:8px 14px; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; white-space:nowrap; color:#D9BC85; transition:background 240ms ease" style-hover="background:#000000; color:#D9BC85">
+            <span style="width:6px; height:6px; border-radius:50%; background:#D9BC85; flex:none; animation:lampica 1.8s ease-in-out infinite"></span>
+            <span>Dežurni 24/7</span>
+          </a>
+        </div>
 
         <h1 style="margin:24px 0 0; max-width:14ch; font-family:'Instrument Sans',sans-serif; font-weight:400; font-size:clamp(28px,min(5.2vh,9vw),50px); line-height:0.9; letter-spacing:-0.03em; color:#2B1E16">
           <span style="display:block; white-space:nowrap">Osmesi građeni</span>
@@ -145,6 +167,10 @@
           <a href="#kontakt" data-hero-cta="1" style="position:relative; overflow:hidden; display:inline-flex; align-items:center; gap:12px; padding:20px 36px; background:#1A1410; color:#FFFBF7; border-radius:999px; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:15.5px; letter-spacing:-0.01em; white-space:nowrap; box-shadow:0 14px 32px rgba(43,34,30,0.28); transition:background 300ms ease, gap 300ms ease, transform 200ms ease, box-shadow 200ms ease" style-hover="background:#000000; gap:16px; transform:translateY(-2px); box-shadow:0 18px 40px rgba(43,34,30,0.32)"><span style="position:absolute; top:0; bottom:0; left:0; width:46px; background:linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.34) 50%, rgba(255,255,255,0) 100%); animation:sjaj 4.2s cubic-bezier(.4,.05,.5,.95) infinite; pointer-events:none"></span>
             <span style="position:relative">Zakaži pregled</span>
             <span style="position:relative; font-size:16px; transition:transform 300ms ease" style-hover="transform:translateX(4px)">→</span>
+          </a>
+          <a href="tel:+381631399997" style="display:inline-flex; align-items:center; gap:8px; padding:20px 4px; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:15px; color:#1A1410; transition:color 240ms ease" style-hover="color:#8A7256">
+            <span style="width:8px; height:8px; border-radius:50%; background:#10B981; flex:none; animation:lampica 1.8s ease-in-out infinite"></span>
+            <span>Hitno? Pozovi dežurnog • 063 139 99 97 →</span>
           </a>
         </div>
 
@@ -778,10 +804,11 @@ class Component extends DCLogic {
       zatvoriModal: () => { try { localStorage.setItem('drmedjed_modal_zatvoren', '1'); } catch (e) {} this.setState({ modalPrikazan: false }); },
       posaljiModal: () => { try { localStorage.setItem('drmedjed_modal_zatvoren', '1'); } catch (e) {} this.setState({ modalPoslato: true }); },
       modalDugme: this.state.modalPoslato ? 'Hvala, zovemo vas uskoro' : 'Pozovite me',
-      stilObuhvatSve: mob ? 'width:100%; padding-bottom:88px' : 'width:100%',
-      stilStickyCTA: "position:fixed; left:16px; right:16px; bottom:calc(16px + env(safe-area-inset-bottom)); z-index:70; display:flex; align-items:center; justify-content:center; gap:10px; height:56px; background:#1A1410; color:#D9BC85; border-radius:999px; font-family:'Instrument Sans',sans-serif; font-weight:600; font-size:15px; letter-spacing:0.01em; box-shadow:0 12px 30px rgba(0,0,0,0.35); text-decoration:none",
+      stilObuhvatSve: mob ? 'width:100%; padding-bottom:80px' : 'width:100%',
+      stickyVidljiv: mob && (this.state.scrollY || 0) > (typeof window !== 'undefined' ? window.innerHeight : 800),
+      stilStickyCTA: "position:fixed; left:16px; right:16px; bottom:calc(12px + env(safe-area-inset-bottom)); z-index:70; display:flex; align-items:center; justify-content:center; gap:10px; height:56px; background:#1A1410; color:#D9BC85; border-radius:999px; font-family:'Instrument Sans',sans-serif; font-weight:600; font-size:15px; letter-spacing:0.01em; box-shadow:0 12px 30px rgba(0,0,0,0.35); text-decoration:none; animation:uvodPilula 400ms cubic-bezier(0.16,1,0.3,1) both",
       stilHeroMobSadrzaj: `position:relative; z-index:8; width:100%; padding:${hh + 28}px 20px 40px; display:flex; flex-direction:column; align-items:flex-start`,
-      stilSlikaMob: 'width:100%; height:380px; margin-top:20px; border-radius:24px; background-color:#CDEBE0; background-image:url(assets/hero-pacijent-nova.webp); background-size:cover; background-position:38% 24%; opacity:0; animation:uvodSlika 800ms cubic-bezier(0.16,1,0.3,1) 200ms both',
+      stilSlikaMob: 'width:100%; height:360px; margin-top:20px; border-radius:20px; background-color:#CDEBE0; background-image:url(assets/hero-pacijent-nova.webp); background-size:cover; background-position:center 15%; opacity:0; animation:uvodSlika 800ms cubic-bezier(0.16,1,0.3,1) 200ms both',
       stilRazloziRed: mob ? 'display:flex; flex-direction:row; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; scrollbar-width:none; padding-bottom:2px' : 'display:flex; flex-direction:column; gap:24px',
       stilRazlogKartica: mob ? 'flex:0 0 85%; scroll-snap-align:start; display:flex; gap:20px; align-items:flex-start; background:#FFFFFF; border:1px solid #F1EAE2; border-radius:20px; padding:24px; transition:transform 260ms cubic-bezier(.2,.7,.3,1), border-color 260ms ease, box-shadow 260ms ease' : 'display:flex; gap:26px; align-items:flex-start; background:#FFFFFF; border:1px solid #F1EAE2; border-radius:20px; padding:clamp(22px,4vw,32px); transition:transform 260ms cubic-bezier(.2,.7,.3,1), border-color 260ms ease, box-shadow 260ms ease',
       razloziTacke: [0, 1, 2].map((i) => ({
