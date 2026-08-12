@@ -44,14 +44,14 @@
 
   <header id="main-header" style="{{ stilHedera }}">
     <div style="{{ stilHedTraka }}">
-      <a href="#vrh" style="display:flex; align-items:center; gap:clamp(9px,2.4vw,14px); flex:0 1 auto; min-width:0; white-space:nowrap">
+      <a href="#vrh" style="{{ stilLogoLink }}">
         <span style="width:clamp(38px,10vw,48px); height:clamp(38px,10vw,48px); border-radius:50%; background:#EDE6DC; display:flex; align-items:center; justify-content:center; flex:none; overflow:hidden; transition:transform 700ms cubic-bezier(0.16,1,0.3,1)" style-hover="transform:rotate(-8deg) scale(1.05)"><img src="assets/logo.png" alt="Dr Međed" style="width:100%; height:100%; border-radius:50%; display:block" /></span>
-        <span style="display:flex; flex-direction:column; line-height:1.1">
-          <span style="font-family:'Instrument Serif',serif; font-size:clamp(16px,4.4vw,19px); letter-spacing:0.03em; color:#1A1410">DR MEĐED</span>
-          <span style="font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:8.5px; letter-spacing:0.18em; text-transform:uppercase; white-space:nowrap; color:#8B7E74; margin-top:3px">Stomatološka ordinacija</span>
+        <span style="display:flex; flex-direction:column; line-height:1.1; min-width:0">
+          <span style="font-family:'Instrument Serif',serif; font-size:clamp(15px,4.4vw,19px); letter-spacing:0.03em; color:#1A1410; white-space:nowrap; overflow:hidden; text-overflow:ellipsis">DR MEĐED</span>
+          <span style="{{ stilLogoPodnaslov }}">Stomatološka ordinacija</span>
         </span>
       </a>
-      <nav style="display:flex; align-items:center; gap:14px; flex-wrap:nowrap; justify-content:flex-end; flex:0 0 auto">
+      <nav style="{{ stilNavCela }}">
         <div style="{{ stilNavLinkovi }}">
         <a href="#usluge" style="font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:12.5px; text-transform:uppercase; letter-spacing:0.12em; white-space:nowrap; color:#6B5D52; padding-bottom:4px; background-image:linear-gradient(#C9B896,#C9B896); background-repeat:no-repeat; background-position:left bottom; background-size:0% 1.5px; transition:color 300ms ease, background-size 400ms cubic-bezier(0.16,1,0.3,1)" style-hover="color:#1A1410; background-size:100% 1.5px">Usluge</a>
         <a href="#o-doktoru" style="font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:12.5px; text-transform:uppercase; letter-spacing:0.12em; white-space:nowrap; color:#6B5D52; padding-bottom:4px; background-image:linear-gradient(#C9B896,#C9B896); background-repeat:no-repeat; background-position:left bottom; background-size:0% 1.5px; transition:color 300ms ease, background-size 400ms cubic-bezier(0.16,1,0.3,1)" style-hover="color:#1A1410; background-size:100% 1.5px">O nama</a>
@@ -59,8 +59,8 @@
         <a href="#kontakt" style="font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:12.5px; text-transform:uppercase; letter-spacing:0.12em; white-space:nowrap; color:#6B5D52; padding-bottom:4px; background-image:linear-gradient(#C9B896,#C9B896); background-repeat:no-repeat; background-position:left bottom; background-size:0% 1.5px; transition:color 300ms ease, background-size 400ms cubic-bezier(0.16,1,0.3,1)" style-hover="color:#1A1410; background-size:100% 1.5px">Kontakt</a>
         </div>
         <a href="tel:+381631399997" style="{{ stilPozovi }}">Pozovi</a>
-        <a href="#kontakt" style="display:inline-flex; align-items:center; gap:8px; background:#1A1410; color:#FFFBF7; padding:13px clamp(15px,4vw,26px); border-radius:999px; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:clamp(13px,3.5vw,14px); letter-spacing:0.02em; white-space:nowrap; transition:background 300ms ease, transform 300ms ease, box-shadow 300ms ease" style-hover="background:#24201E; color:#FFFBF7; transform:translateY(-1.5px); box-shadow:0 10px 20px rgba(0,0,0,0.12)">
-          <span>Zakaži pregled</span>
+        <a href="#kontakt" style="display:inline-flex; align-items:center; gap:8px; background:#1A1410; color:#FFFBF7; padding:13px clamp(14px,4vw,26px); border-radius:999px; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:clamp(12.5px,3.2vw,14px); letter-spacing:0.02em; white-space:nowrap; flex:none; transition:background 300ms ease, transform 300ms ease, box-shadow 300ms ease" style-hover="background:#24201E; color:#FFFBF7; transform:translateY(-1.5px); box-shadow:0 10px 20px rgba(0,0,0,0.12)">
+          <span>{{ tekstDugmetaHeder }}</span>
           <span style="width:18px; height:18px; border-radius:50%; background:rgba(255,255,255,0.15); display:flex; align-items:center; justify-content:center; font-size:10px; flex:none">→</span>
         </a>
       </nav>
@@ -130,7 +130,7 @@
 
   <section id="filozofija" data-screen-label="Naša filozofija" style="background:#FFFFFF; padding:clamp(60px,9vw,100px) clamp(20px,4vw,48px)">
     <div style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:clamp(32px,5vw,64px); align-items:start">
-      <div style="position:sticky; top:120px; display:flex; flex-direction:column; gap:28px">
+      <div style="{{ stilLepljivoFilozofija }}">
         <span style="font-family:'Instrument Sans',sans-serif; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#2B1E16; opacity:0.6">Naša filozofija • Obrenovac</span>
         <h2 style="margin:0; font-family:'Instrument Serif',serif; font-weight:500; font-size:32px; line-height:1.25; letter-spacing:-0.01em; color:#2B1E16; text-wrap:pretty">Zato što poseta može da izgleda i oseća se drugačije.</h2>
         <div style="width:100%; aspect-ratio:4/3; border-radius:18px; overflow:hidden; background-color:#FBF7F2; background-image:url('assets/filozofija-ordinacija.webp'); background-size:cover; background-position:50% 55%"></div>
@@ -167,7 +167,7 @@
   <section id="usluge" data-screen-label="Usluge" style="background:#EFE8DE; padding:clamp(64px,9vw,110px) clamp(20px,4vw,48px)">
     <div style="max-width:1180px; margin:0 auto; display:flex; flex-direction:column; gap:52px">
       <h2 style="margin:0; font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.025em; font-size:clamp(28px,3.2vw,44px); line-height:1.14; color:#3D2B1F">Usluge</h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr)); gap:20px">
+      <div style="{{ stilUslugeDesktop }}">
         <sc-for list="{{ usluge }}" as="u" hint-placeholder-count="5">
           <div style="position:relative; background:#FFFBF7; border:1px solid #E8DDD3; border-radius:24px; padding:clamp(22px,4vw,28px); display:flex; flex-direction:column; min-height:200px; transition:transform 260ms cubic-bezier(.2,.7,.3,1), box-shadow 260ms ease" style-hover="transform:translateY(-4px); box-shadow:0 24px 48px rgba(43,30,22,0.12)">
             <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:16px">
@@ -188,6 +188,25 @@
             <span style="font-size:15.5px; line-height:1.7; color:#6B5D55">Hijaluron, mezoterapija, botoks, prirodno lice, bez preterivanja. Isto nežno kao i zubi.</span>
             <span style="margin-top:6px; font-size:13.5px; letter-spacing:0.1em; text-transform:uppercase; color:#8A9A7B">Pogledaj tretmane →</span>
           </div>
+        </a>
+      </div>
+      <div style="{{ stilUslugeMobilno }}">
+        <sc-for list="{{ usluge }}" as="u" hint-placeholder-count="5">
+          <div style="display:grid; grid-template-columns:56px 1fr; gap:clamp(18px,3vw,32px); align-items:center; padding:clamp(22px,3.4vw,32px) 0; border-top:1px solid rgba(61,43,31,0.14)">
+            <span style="width:56px; height:56px; border-radius:50%; background:#E8DDD3; display:flex; align-items:center; justify-content:center; flex:none"><span style="{{ u.znakStil }}" style-hover="transform:scale(1.1)"></span></span>
+            <div style="display:flex; flex-direction:column; gap:6px; min-width:0">
+              <span style="font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:clamp(19px,2.2vw,22px); line-height:1.25; letter-spacing:-0.01em; color:#2B221E">{{ u.naziv }}</span>
+              <span style="font-family:'Instrument Sans',sans-serif; font-size:15px; line-height:1.6; color:#6B5D55">{{ u.opis }}</span>
+            </div>
+          </div>
+        </sc-for>
+        <a href="#estetika" style="display:grid; grid-template-columns:56px 1fr auto; gap:clamp(18px,3vw,32px); align-items:center; padding:clamp(22px,3.4vw,32px) 0; border-top:1px solid rgba(61,43,31,0.14); border-bottom:1px solid rgba(61,43,31,0.14); transition:background 200ms ease" style-hover="background:rgba(255,251,247,0.5)">
+          <span style="width:56px; height:56px; border-radius:50%; background:#E8DDD3; display:flex; align-items:center; justify-content:center; flex:none"><img src="assets/ic-estetska-medicina.png" alt="" style="width:32px; height:32px; transition:transform 240ms ease" style-hover="transform:scale(1.1)" /></span>
+          <div style="display:flex; flex-direction:column; gap:6px; min-width:0">
+            <span style="font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.02em; font-size:clamp(21px,2.4vw,25px); line-height:1.2; color:#2B221E">Estetska medicina</span>
+            <span style="font-size:15.5px; line-height:1.6; color:#6B5D55">Hijaluron, mezoterapija, botoks, prirodno lice, bez preterivanja. Isto nežno kao i zubi.</span>
+          </div>
+          <span style="font-family:'Instrument Sans',sans-serif; font-size:13.5px; letter-spacing:0.1em; text-transform:uppercase; white-space:nowrap; color:#8A9A7B; flex:none">Pogledaj →</span>
         </a>
       </div>
     </div>
@@ -328,22 +347,20 @@
           <p style="position:relative; margin:0; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(36px,3.6vw,48px); line-height:0.95; letter-spacing:-0.02em; color:#1A1410; text-wrap:pretty">Verujem da ljudi ne beže od zubara zbog zuba, nego zbog osećaja.</p>
         </div>
 
-        <p style="margin:32px 0 0; max-width:100%; font-family:'Instrument Sans',sans-serif; font-size:17px; line-height:1.7; color:#6B5D52; text-wrap:pretty">Zovem se Nemanja Međedović. Deset godina radim u stolici, a Obrenovac je moj grad — pola pacijenata poznajem s ulice. Ordinaciju u Miloša Obrenovića 118 vodim po jednom pravilu: prvo objasnim, pa onda radim.</p>
+        <p style="margin:32px 0 0; max-width:100%; font-family:'Instrument Sans',sans-serif; font-size:17px; line-height:1.7; color:#6B5D52; text-wrap:pretty">Zovem se Đorđe Međed. Deset godina se bavim ovim poslom, a Obrenovac je moj grad. Ordinaciju u Miloša Obrenovića 118 vodim po jednom pravilu: prvo objasnim, pa onda radim.</p>
 
-        <div style="display:flex; align-items:stretch; gap:32px; margin-top:40px; padding:24px 0; border-top:1px solid rgba(0,0,0,0.05); border-bottom:1px solid rgba(0,0,0,0.05); width:100%; flex-wrap:wrap">
-          <div style="display:flex; flex-direction:column; gap:6px">
-            <span style="font-family:'Instrument Serif',serif; font-size:24px; line-height:1; color:#1A1410">10+</span>
-            <span style="font-family:'Instrument Sans',sans-serif; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8B7E74">godina prakse</span>
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(12px,3vw,32px); margin-top:40px; padding:24px 0; border-top:1px solid rgba(0,0,0,0.05); border-bottom:1px solid rgba(0,0,0,0.05); width:100%">
+          <div style="display:flex; flex-direction:column; gap:6px; padding-right:clamp(12px,3vw,32px); border-right:1px solid rgba(0,0,0,0.07); min-width:0">
+            <span style="font-family:'Instrument Serif',serif; font-size:clamp(20px,5vw,24px); line-height:1; color:#1A1410">10+</span>
+            <span style="font-family:'Instrument Sans',sans-serif; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:#8B7E74">godina prakse</span>
           </div>
-          <span style="width:1px; background:rgba(0,0,0,0.07); flex:none"></span>
-          <div style="display:flex; flex-direction:column; gap:6px">
-            <span style="font-family:'Instrument Serif',serif; font-size:24px; line-height:1; color:#1A1410">1200+</span>
-            <span style="font-family:'Instrument Sans',sans-serif; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8B7E74">zadovoljnih pacijenata</span>
+          <div style="display:flex; flex-direction:column; gap:6px; padding-right:clamp(12px,3vw,32px); border-right:1px solid rgba(0,0,0,0.07); min-width:0">
+            <span style="font-family:'Instrument Serif',serif; font-size:clamp(20px,5vw,24px); line-height:1; color:#1A1410">1200+</span>
+            <span style="font-family:'Instrument Sans',sans-serif; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:#8B7E74">zadovoljnih pacijenata</span>
           </div>
-          <span style="width:1px; background:rgba(0,0,0,0.07); flex:none"></span>
-          <div style="display:flex; flex-direction:column; gap:6px">
-            <span style="font-family:'Instrument Serif',serif; font-size:24px; line-height:1; color:#1A1410">5.0★</span>
-            <span style="font-family:'Instrument Sans',sans-serif; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#8B7E74">prosečna ocena</span>
+          <div style="display:flex; flex-direction:column; gap:6px; min-width:0">
+            <span style="font-family:'Instrument Serif',serif; font-size:clamp(20px,5vw,24px); line-height:1; color:#1A1410">5.0★</span>
+            <span style="font-family:'Instrument Sans',sans-serif; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:#8B7E74">prosečna ocena</span>
           </div>
         </div>
 
@@ -361,7 +378,7 @@
 
   <section id="cenovnik" data-screen-label="Cenovnik" style="background:#EFE8DE; padding:clamp(64px,9vw,110px) clamp(20px,4vw,48px)">
     <div style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:clamp(32px,4vw,64px); align-items:start">
-      <div style="position:sticky; top:120px; display:flex; flex-direction:column; gap:20px">
+      <div style="{{ stilLepljivoCenovnik }}">
         <h2 style="margin:0; font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.025em; font-size:clamp(28px,3.2vw,44px); line-height:1.14; color:#3D2B1F">Cenovnik</h2>
         <p style="margin:0; font-size:16.5px; line-height:1.7; color:#6B5843">Cenu čuješ na prvom pregledu, pre rada. Akcija povodom otvaranja važi za prvih 30 pacijenata.</p>
         <span style="margin-top:8px; padding-top:20px; border-top:1px solid rgba(61,43,31,0.18); font-family:'Instrument Sans',sans-serif; font-size:14px; line-height:1.7; color:#6B5843">Plan terapije dobijaš na papiru, sa cenama, pre nego što počnemo.</span>
@@ -422,7 +439,7 @@
     </div>
   </section>
 
-  <section id="kontakt" data-screen-label="Dogovor" style="position:relative; overflow:hidden; min-height:85vh; background:#AFC8CB; padding:clamp(70px,9vw,120px) clamp(20px,4vw,48px)">
+  <section id="kontakt" data-screen-label="Dogovor" style="{{ stilKontaktSekcije }}">
     <span style="position:absolute; z-index:1; right:-4vw; top:34%; transform:rotate(-5deg); font-family:'Instrument Serif',serif; font-weight:600; font-size:20vw; line-height:0.8; color:#FFFFFF; opacity:0.06; filter:blur(2px); pointer-events:none; white-space:nowrap">ZAKAŽI</span>
     <div style="position:relative; z-index:2; max-width:1180px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:40px; align-items:start">
       <div style="min-width:0; display:flex; flex-direction:column">
@@ -462,7 +479,7 @@
       <div style="{{ stilKontaktPraznina }}"></div>
     </div>
     <div style="{{ stilKontaktDoktor }}">
-      <div style="position:absolute; right:12px; left:auto; width:min(290px,74%); bottom:28px; background:rgba(255,255,255,0.88); backdrop-filter:blur(20px); border-radius:16px; padding:16px 18px; display:flex; flex-direction:column; gap:4px">
+      <div style="{{ stilKontaktBedza }}">
         <span style="font-size:15.5px; color:#3D2B1F">Otvoreno 24/7</span>
         <span style="font-size:14px; color:#8A7256">Hitni slučajevi bez zakazivanja</span>
         <span style="font-size:14px; color:#6E979D">Estetska medicina, petkom</span>
@@ -611,12 +628,24 @@ class Component extends DCLogic {
 
     return {
       stilHeroObuhvat: mob ? 'position:relative' : 'position:relative; height:320vh',
+      stilUslugeDesktop: mob ? 'display:none' : 'display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr)); gap:20px',
+      stilUslugeMobilno: mob ? 'display:flex; flex-direction:column' : 'display:none',
+      tekstDugmetaHeder: vw < 400 ? 'Zakaži' : 'Zakaži pregled',
+      stilLogoLink: mob ? 'display:flex; align-items:center; gap:clamp(8px,2.4vw,14px); flex:1 1 auto; min-width:0' : 'display:flex; align-items:center; gap:clamp(9px,2.4vw,14px); flex:0 1 auto; min-width:0; white-space:nowrap',
+      stilLogoPodnaslov: vw < 400 ? 'display:none' : "font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:8.5px; letter-spacing:0.14em; text-transform:uppercase; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#8B7E74; margin-top:3px",
+      stilNavCela: mob ? 'display:flex; align-items:center; gap:8px; flex-wrap:nowrap; justify-content:flex-end; flex:0 0 auto' : 'display:flex; align-items:center; gap:14px; flex-wrap:nowrap; justify-content:flex-end; flex:0 0 auto',
       stilNavLinkovi: mob ? 'display:none' : 'display:flex; align-items:center; gap:30px; flex-wrap:nowrap',
-      stilPozovi: mob ? "display:inline-flex; align-items:center; border:1px solid rgba(26,20,16,0.18); border-radius:999px; padding:11px 16px; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:13px; letter-spacing:0.02em; white-space:nowrap; color:#1A1410" : 'display:none',
+      stilPozovi: mob ? (vw < 400 ? 'display:none' : "display:inline-flex; align-items:center; border:1px solid rgba(26,20,16,0.18); border-radius:999px; padding:11px 14px; font-family:'Instrument Sans',sans-serif; font-weight:500; font-size:12.5px; white-space:nowrap; color:#1A1410; flex:none") : 'display:none',
+      stilLepljivoFilozofija: mob ? 'display:flex; flex-direction:column; gap:28px' : 'position:sticky; top:120px; display:flex; flex-direction:column; gap:28px',
+      stilLepljivoCenovnik: mob ? 'display:flex; flex-direction:column; gap:20px' : 'position:sticky; top:120px; display:flex; flex-direction:column; gap:20px',
+      stilKontaktSekcije: `position:relative; overflow:hidden; ${mob ? '' : 'min-height:85vh;'} background:#AFC8CB; padding:clamp(70px,9vw,120px) clamp(20px,4vw,48px) ${mob ? '0' : 'clamp(70px,9vw,120px)'}`,
       stilKontaktPraznina: mob ? 'display:none' : 'min-height:420px',
       stilKontaktDoktor: mob
-        ? "position:relative; z-index:3; width:100%; height:52vw; min-height:260px; margin-top:36px; background-image:url('assets/kontakt-doktor.png'); background-size:contain; background-repeat:no-repeat; background-position:right bottom"
+        ? "position:relative; z-index:3; width:78%; max-width:340px; aspect-ratio:1190/1105; margin:36px auto 0; background-image:url('assets/kontakt-doktor.png'); background-size:contain; background-repeat:no-repeat; background-position:bottom center"
         : "position:absolute; z-index:3; right:max(clamp(20px,4vw,48px), calc((100% - 1180px) / 2)); bottom:0; width:min(40vw,500px); height:min(640px,86%); pointer-events:none; background-image:url('assets/kontakt-doktor.png'); background-size:contain; background-repeat:no-repeat; background-position:right bottom",
+      stilKontaktBedza: mob
+        ? "position:relative; margin:0 auto; width:min(290px,88%); background:rgba(255,255,255,0.92); backdrop-filter:blur(20px); border-radius:16px; padding:16px 18px; display:flex; flex-direction:column; gap:4px"
+        : "position:absolute; right:12px; left:auto; width:min(290px,74%); bottom:28px; background:rgba(255,255,255,0.88); backdrop-filter:blur(20px); border-radius:16px; padding:16px 18px; display:flex; flex-direction:column; gap:4px",
       hedYPomeraj: this.state.hedVidljiv ? '0px' : '-' + ((this.state.headerH || 76) + 8) + 'px',
       stilDoktorSlika: `position:absolute; inset:0; background-image:url(assets/doktor-portret.png); background-size:cover; background-position:50% 30%; transform:scale(${this.state.procesVidljiv ? 1 : 1.08}); transition:transform 1200ms cubic-bezier(0.16,1,0.3,1)`,
       stilHedera: `position:fixed; top:0; left:0; right:0; z-index:50; width:100%; background:${this.state.hedZbijen ? 'rgba(255,251,247,0.8)' : '#FFFBF7'}; ${this.state.hedZbijen ? 'backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); box-shadow:0 1px 3px rgba(0,0,0,0.05);' : ''} border-bottom:1px solid rgba(0,0,0,0.06); transform:translateY(${this.state.hedVidljiv ? '0px' : '-' + ((this.state.headerH || 76) + 8) + 'px'}); transition:transform 500ms cubic-bezier(0.16,1,0.3,1), background 500ms ease, box-shadow 500ms ease`,
