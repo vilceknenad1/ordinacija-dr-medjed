@@ -566,7 +566,6 @@
           </span>
         </div>
         <button onClick="{{ posalji }}" style="align-self:flex-start; margin-top:56px; cursor:pointer; border:none; background:#FFFFFF; color:#2B1B12; font-size:17px; font-weight:600; border-radius:999px; padding:22px 40px; box-shadow:0 4px 20px rgba(0,0,0,0.1); transition:transform 160ms ease" style-hover="transform:scale(1.02)">{{ dugmeUpit }}</button>
-        <span style="margin-top:12px; font-size:12px; letter-spacing:0.04em; color:rgba(43,27,18,0.55)">Odgovaramo za 30 min • Bez obaveza</span>
         <div style="display:flex; align-items:center; gap:16px; margin-top:56px">
           <span style="width:44px; height:1px; background:rgba(61,43,31,0.35); display:block"></span>
           <span style="font-size:12.5px; letter-spacing:0.18em; text-transform:uppercase; color:rgba(61,43,31,0.65)">Ili pozovi direktno</span>
@@ -824,10 +823,10 @@ class Component extends DCLogic {
       stilKontaktSekcije: `position:relative; overflow:hidden; ${mob ? '' : 'min-height:85vh;'} background:#AFC8CB; padding:clamp(70px,9vw,120px) clamp(20px,4vw,48px) ${mob ? '0' : 'clamp(70px,9vw,120px)'}`,
       stilKontaktPraznina: mob ? 'display:none' : 'min-height:420px',
       stilKontaktDoktor: mob
-        ? "position:relative; z-index:1; width:92%; max-width:400px; aspect-ratio:1536/1024; margin:36px auto 0; background-image:url('assets/kontakt-doktor.png'); background-size:contain; background-repeat:no-repeat; background-position:bottom center; filter:drop-shadow(0 20px 30px rgba(0,0,0,0.15))"
+        ? "position:relative; z-index:1; width:92%; max-width:400px; aspect-ratio:1536/1024; margin:36px auto 90px; background-image:url('assets/kontakt-doktor.png'); background-size:contain; background-repeat:no-repeat; background-position:bottom center; -webkit-mask-image:linear-gradient(to bottom, #000 76%, transparent 99%); mask-image:linear-gradient(to bottom, #000 76%, transparent 99%)"
         : "position:absolute; z-index:3; right:max(clamp(20px,4vw,48px), calc((100% - 1180px) / 2)); bottom:0; width:min(52vw,640px); height:min(760px,96%); pointer-events:none; background-image:url('assets/kontakt-doktor.png'); background-size:contain; background-repeat:no-repeat; background-position:right bottom",
       stilKontaktBedza: mob
-        ? "position:relative; z-index:2; margin:0 auto 40px; width:85%; max-width:380px; background:#FFFFFF; border-radius:24px; padding:20px 24px; display:flex; flex-direction:column; gap:4px; box-shadow:0 10px 40px rgba(0,0,0,0.08)"
+        ? "position:absolute; left:50%; transform:translateX(-50%); bottom:-46px; z-index:4; width:85%; max-width:380px; background:#FFFFFF; border-radius:24px; padding:20px 24px; display:flex; flex-direction:column; gap:4px; box-shadow:0 10px 40px rgba(0,0,0,0.08)"
         : "position:absolute; right:12px; left:auto; width:min(290px,74%); bottom:28px; background:rgba(255,255,255,0.88); backdrop-filter:blur(20px); border-radius:16px; padding:16px 18px; display:flex; flex-direction:column; gap:4px",
       hedYPomeraj: this.state.hedVidljiv ? '0px' : '-' + ((this.state.headerH || 76) + 8) + 'px',
       stilDoktorSlika: `position:absolute; inset:0; background-image:url(assets/doktor-portret.png); background-size:cover; background-position:50% 30%; transform:scale(${this.state.procesVidljiv ? 1 : 1.08}); transition:transform 1200ms cubic-bezier(0.16,1,0.3,1)`,
