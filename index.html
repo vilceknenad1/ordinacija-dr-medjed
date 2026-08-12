@@ -167,7 +167,7 @@
   <section id="usluge" data-screen-label="Usluge" style="background:#EFE8DE; padding:clamp(64px,9vw,110px) clamp(20px,4vw,48px)">
     <div style="max-width:1180px; margin:0 auto; display:flex; flex-direction:column; gap:52px">
       <h2 style="margin:0; font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.025em; font-size:clamp(28px,3.2vw,44px); line-height:1.14; color:#3D2B1F">Usluge</h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr)); gap:20px">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr)); gap:20px">
         <sc-for list="{{ usluge }}" as="u" hint-placeholder-count="5">
           <div style="position:relative; background:#FFFBF7; border:1px solid #E8DDD3; border-radius:24px; padding:clamp(22px,4vw,28px); display:flex; flex-direction:column; min-height:200px; transition:transform 260ms cubic-bezier(.2,.7,.3,1), box-shadow 260ms ease" style-hover="transform:translateY(-4px); box-shadow:0 24px 48px rgba(43,30,22,0.12)">
             <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:16px">
@@ -200,21 +200,22 @@
         <h2 style="margin:0; font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.025em; font-size:clamp(28px,3.2vw,44px); line-height:1.14; color:#2B221E">Osmeh koji priča sam za sebe</h2>
         <p style="margin:0; font-size:17px; line-height:1.6; color:#6B5D55">Bez filtera, naši pacijenti.</p>
       </div>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:clamp(32px,4vw,56px); align-items:center">
-        <div style="position:relative; width:100%; aspect-ratio:3/2; overflow:hidden; border-radius:24px; background:#E8DDD3; background-image:url('assets/ba-zubi-pre.jpg'); background-size:cover; background-position:center 48%">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:clamp(32px,4vw,56px); align-items:stretch">
+        <div style="position:relative; width:100%; aspect-ratio:4/3; overflow:hidden; border-radius:24px; background:#E8DDD3; background-image:url('assets/ba-zubi-pre.jpg'); background-size:cover; background-position:center 48%">
           <div style="position:absolute; inset:0; background-image:url('assets/ba-zubi-posle.jpg'); background-size:cover; background-position:center 48%; animation:posleWipe 7s cubic-bezier(.5,.05,.5,.95) infinite"></div>
           <div style="position:absolute; top:0; bottom:0; width:2px; background:#C9B896; animation:posleLinija 7s cubic-bezier(.5,.05,.5,.95) infinite"></div>
           <span style="position:absolute; left:16px; bottom:16px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#FFFFFF; text-shadow:0 1px 6px rgba(0,0,0,0.45)">Pre</span>
           <span style="position:absolute; right:16px; bottom:16px; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#FFFFFF; text-shadow:0 1px 6px rgba(0,0,0,0.45)">Posle</span>
         </div>
-        <div style="display:flex; flex-direction:column; gap:24px; align-items:flex-start">
-          <h3 style="margin:0; font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.02em; font-size:32px; line-height:1.2; color:#2B221E">Kompletan tretman osmeha</h3>
-          <div style="display:flex; flex-direction:column; gap:14px">
+        <div style="display:flex; flex-direction:column; gap:26px; align-items:flex-start; justify-content:center; width:100%; height:100%; background:#FFFFFF; border:1px solid #F1EAE2; border-radius:24px; padding:clamp(26px,3.4vw,40px)">
+          <h3 style="margin:0; flex:none; align-self:stretch; font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.02em; font-size:clamp(28px,3vw,36px); line-height:1.2; color:#2B221E">Kompletan tretman osmeha</h3>
+          <div style="display:flex; flex-direction:column; gap:14px; flex:none">
             <span style="display:flex; align-items:center; gap:12px; font-size:17px; color:#4E3B2C"><span style="width:22px; height:22px; border-radius:50%; background:#E8F3EF; color:#4A5A54; display:flex; align-items:center; justify-content:center; font-size:12px; flex:none">✓</span>Uklanjanje zubnog kamenca</span>
             <span style="display:flex; align-items:center; gap:12px; font-size:17px; color:#4E3B2C"><span style="width:22px; height:22px; border-radius:50%; background:#E8F3EF; color:#4A5A54; display:flex; align-items:center; justify-content:center; font-size:12px; flex:none">✓</span>Poliranje</span>
             <span style="display:flex; align-items:center; gap:12px; font-size:17px; color:#4E3B2C"><span style="width:22px; height:22px; border-radius:50%; background:#E8F3EF; color:#4A5A54; display:flex; align-items:center; justify-content:center; font-size:12px; flex:none">✓</span>Profesionalno izbeljivanje</span>
           </div>
-          <a href="#kontakt" style="display:inline-flex; align-items:center; height:52px; padding:0 30px; background:#2B221E; color:#FFFBF7; border-radius:999px; font-size:15px; transition:transform 200ms ease, background 200ms ease" style-hover="background:#3D2B1F; color:#FFFBF7; transform:translateY(-2px)">Pogledajte sve transformacije →</a>
+          <a href="#kontakt" style="display:inline-flex; flex:none; align-items:center; height:52px; padding:0 30px; background:#2B221E; color:#FFFBF7; border-radius:999px; font-size:15px; transition:transform 200ms ease, background 200ms ease" style-hover="background:#3D2B1F; color:#FFFBF7; transform:translateY(-2px)">Pogledajte sve transformacije →</a>
+          <span style="display:none"></span>
         </div>
       </div>
     </div>
@@ -304,8 +305,8 @@
     </div>
   </section>
 
-  <section id="o-doktoru" data-screen-label="O doktoru" style="background:#FFFBF7; padding:clamp(70px,9vw,120px) clamp(20px,4vw,32px)">
-    <div style="max-width:1240px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr)); gap:clamp(36px,5vw,88px); align-items:center">
+  <section id="o-doktoru" data-screen-label="O doktoru" style="background:#FFFBF7; padding:clamp(70px,9vw,120px) clamp(20px,4vw,48px)">
+    <div style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:clamp(32px,4vw,64px); align-items:center">
 
       <div style="position:relative; width:100%; height:clamp(400px,62vh,640px); border-radius:32px; overflow:hidden; background:#EDE6DC">
         <div style="{{ stilDoktorSlika }}"></div>
@@ -327,7 +328,7 @@
           <p style="position:relative; margin:0; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(36px,3.6vw,48px); line-height:0.95; letter-spacing:-0.02em; color:#1A1410; text-wrap:pretty">Verujem da ljudi ne beže od zubara zbog zuba, nego zbog osećaja.</p>
         </div>
 
-        <p style="margin:32px 0 0; max-width:42ch; font-family:'Instrument Sans',sans-serif; font-size:17px; line-height:1.7; color:#6B5D52; text-wrap:pretty">Zovem se Nemanja Međedović. Deset godina radim u stolici, a Obrenovac je moj grad — pola pacijenata poznajem s ulice. Ordinaciju u Miloša Obrenovića 118 vodim po jednom pravilu: prvo objasnim, pa onda radim.</p>
+        <p style="margin:32px 0 0; max-width:100%; font-family:'Instrument Sans',sans-serif; font-size:17px; line-height:1.7; color:#6B5D52; text-wrap:pretty">Zovem se Nemanja Međedović. Deset godina radim u stolici, a Obrenovac je moj grad — pola pacijenata poznajem s ulice. Ordinaciju u Miloša Obrenovića 118 vodim po jednom pravilu: prvo objasnim, pa onda radim.</p>
 
         <div style="display:flex; align-items:stretch; gap:32px; margin-top:40px; padding:24px 0; border-top:1px solid rgba(0,0,0,0.05); border-bottom:1px solid rgba(0,0,0,0.05); width:100%; flex-wrap:wrap">
           <div style="display:flex; flex-direction:column; gap:6px">
@@ -387,7 +388,7 @@
     </div>
   </section>
 
-  <section data-screen-label="Recenzije" style="background:#F5F1EB; padding:clamp(64px,9vw,110px) clamp(20px,4vw,48px)">
+  <section data-screen-label="Recenzije" style="background:#FFFBF7; padding:clamp(64px,9vw,110px) clamp(20px,4vw,48px)">
     <div style="max-width:1180px; margin:0 auto; display:flex; flex-direction:column; gap:48px">
       <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:32px; flex-wrap:wrap">
         <h2 style="margin:0; font-family:'Manrope',sans-serif; font-weight:300; letter-spacing:-0.025em; font-size:clamp(28px,3.2vw,44px); line-height:1.14; color:#3D2B1F">Šta kažu pacijenti</h2>
@@ -397,10 +398,10 @@
         <div style="{{ stilTrake }}">
           <sc-for list="{{ recenzije }}" as="r" hint-placeholder-count="3">
             <div style="flex:0 0 100%; padding-right:20px; box-sizing:border-box">
-              <div style="background:#EFE8DE; border-radius:20px; padding:clamp(26px,5vw,44px) clamp(24px,5vw,46px); display:flex; flex-direction:column; gap:22px; min-height:260px">
-                <span style="font-size:15px; letter-spacing:0.16em; color:#C4A985">★★★★★</span>
-                <p style="margin:0; font-family:'Manrope',sans-serif; font-weight:300; font-size:22px; line-height:1.6; color:#4E3B2C; text-wrap:pretty">{{ r.tekst }}</p>
-                <span style="margin-top:auto; font-size:14.5px; letter-spacing:0.04em; color:#8A7256">{{ r.ime }}</span>
+              <div style="background:#3D2B1F; border-radius:20px; padding:clamp(28px,5vw,48px) clamp(26px,5vw,50px); display:flex; flex-direction:column; gap:24px; min-height:280px">
+                <span style="font-size:15px; letter-spacing:0.16em; color:#C9B896">★★★★★</span>
+                <p style="margin:0; font-family:'Instrument Serif',serif; font-weight:400; font-size:clamp(22px,2.4vw,28px); line-height:1.45; color:#F5F1EB; text-wrap:pretty">{{ r.tekst }}</p>
+                <span style="margin-top:auto; font-size:13px; letter-spacing:0.16em; text-transform:uppercase; color:#C4A985">{{ r.ime }}</span>
               </div>
             </div>
           </sc-for>
@@ -581,6 +582,13 @@ class Component extends DCLogic {
       return 'rgb(' + pa.map((v, i) => Math.round(mix(v, pb[i], t))).join(',') + ')';
     };
 
+    const vw = this.state.vw || 1440;
+    const mob = vw < 820;
+    const hh = this.state.headerH || 76;
+    const gutter = Math.max(20, Math.min(48, vw * 0.04));
+    const contentW = Math.min(1180, vw - 2 * gutter);
+    const sideGap = (vw - contentW) / 2;
+
     const f1 = ease(clamp(p / 0.75));
     const tekst = clamp(1 - p / 0.4);
     const f2 = ease((p - 0.6) / 0.22);
@@ -593,18 +601,13 @@ class Component extends DCLogic {
     const potpis = clamp((f3 - 0.45) / 0.4);
 
     const pozadina = hex('#FFFBF7', '#F5F1EB', clamp((p - 0.7) / 0.3));
-    const sirina1 = mix(48, 100, f1);
+    const sirina1 = mix(contentW * 0.52, vw, f1);
     const visina1 = mix(68, 100, f1);
     const visinaSlike = this.state.tekstH ? mix(this.state.tekstH, window.innerHeight, f1) : 0;
     const radius1 = mix(40, 0, f1);
     const pozX = mix(58, 50, f1);
     const pozY = mix(28, 50, f1);
 
-    const vw = this.state.vw || 1440;
-    const mob = vw < 820;
-    const hh = this.state.headerH || 76;
-    const contentW = Math.min(vw, 1440);
-    const sideGap = (vw - contentW) / 2;
 
     return {
       stilHeroObuhvat: mob ? 'position:relative' : 'position:relative; height:320vh',
@@ -613,14 +616,14 @@ class Component extends DCLogic {
       stilKontaktPraznina: mob ? 'display:none' : 'min-height:420px',
       stilKontaktDoktor: mob
         ? "position:relative; z-index:3; width:100%; height:52vw; min-height:260px; margin-top:36px; background-image:url('assets/kontakt-doktor.png'); background-size:contain; background-repeat:no-repeat; background-position:right bottom"
-        : "position:absolute; z-index:3; right:0; bottom:0; width:min(44vw,540px); height:min(660px,88%); pointer-events:none; background-image:url('assets/kontakt-doktor.png'); background-size:contain; background-repeat:no-repeat; background-position:right bottom",
+        : "position:absolute; z-index:3; right:max(clamp(20px,4vw,48px), calc((100% - 1180px) / 2)); bottom:0; width:min(40vw,500px); height:min(640px,86%); pointer-events:none; background-image:url('assets/kontakt-doktor.png'); background-size:contain; background-repeat:no-repeat; background-position:right bottom",
       hedYPomeraj: this.state.hedVidljiv ? '0px' : '-' + ((this.state.headerH || 76) + 8) + 'px',
       stilDoktorSlika: `position:absolute; inset:0; background-image:url(assets/doktor-portret.png); background-size:cover; background-position:50% 30%; transform:scale(${this.state.procesVidljiv ? 1 : 1.08}); transition:transform 1200ms cubic-bezier(0.16,1,0.3,1)`,
       stilHedera: `position:fixed; top:0; left:0; right:0; z-index:50; width:100%; background:${this.state.hedZbijen ? 'rgba(255,251,247,0.8)' : '#FFFBF7'}; ${this.state.hedZbijen ? 'backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); box-shadow:0 1px 3px rgba(0,0,0,0.05);' : ''} border-bottom:1px solid rgba(0,0,0,0.06); transform:translateY(${this.state.hedVidljiv ? '0px' : '-' + ((this.state.headerH || 76) + 8) + 'px'}); transition:transform 500ms cubic-bezier(0.16,1,0.3,1), background 500ms ease, box-shadow 500ms ease`,
-      stilHedTraka: `max-width:1440px; margin:0 auto; padding:${this.state.hedZbijen ? '8px' : '14px'} 28px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:nowrap; transition:padding 500ms cubic-bezier(0.16,1,0.3,1)`,
+      stilHedTraka: `max-width:1276px; margin:0 auto; padding:${this.state.hedZbijen ? '8px' : '14px'} clamp(20px,4vw,48px); display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:nowrap; transition:padding 500ms cubic-bezier(0.16,1,0.3,1)`,
       scena: mob ? `position:relative; height:auto; background:#FFFBF7; display:flex; flex-direction:column; gap:26px; padding:${hh + 30}px 20px 52px` : `${p < 0.999 ? 'position:fixed; top:0; left:0; right:0; z-index:1' : 'position:absolute; bottom:0; left:0; right:0'}; height:100vh; overflow:hidden; background:${pozadina}; display:flex; align-items:center; justify-content:center; transition:background 120ms linear`,
-      stilTeksta: mob ? 'position:relative; z-index:8; width:100%; display:flex; flex-direction:column; align-items:flex-start' : `position:absolute; z-index:8; top:calc(50% + ${((this.state.headerH || 76) / 2).toFixed(0)}px); left:${(sideGap + 28).toFixed(0)}px; width:${Math.min(560, vw * 0.45).toFixed(0)}px; transform:translateY(calc(-50% + ${mix(0, -80, 1 - tekst).toFixed(1)}px)); display:flex; flex-direction:column; align-items:flex-start; opacity:${tekst.toFixed(3)}; pointer-events:${tekst > 0.4 ? 'auto' : 'none'}`,
-      stilSlike1: mob ? 'position:relative; z-index:3; width:100%; height:58vh; min-height:340px; border-radius:26px; overflow:hidden; background-color:#CDEBE0; background-image:url(assets/hero-pacijent-nova.webp); background-size:cover; background-position:58% 26%; box-shadow:0 20px 50px rgba(43,30,22,0.14)' : `position:absolute; z-index:3; top:calc(50% + ${mix((this.state.headerH || 76) / 2, 0, f1).toFixed(0)}px); transform:translateY(-50%); right:${mix(sideGap + 28, 0, f1).toFixed(0)}px; width:${(vw * sirina1 / 100).toFixed(0)}px; height:${visinaSlike ? visinaSlike.toFixed(0) + 'px' : visina1.toFixed(2) + 'vh'}; border-radius:${radius1.toFixed(1)}px; overflow:hidden; background-color:#CDEBE0; background-image:url(assets/hero-pacijent-nova.webp); background-size:cover; background-position:${pozX.toFixed(1)}% ${pozY.toFixed(1)}%; box-shadow:${f1 < 0.9 ? '0 32px 80px rgba(43,30,22,0.14)' : 'none'}; opacity:${clamp(1 - f2).toFixed(3)}`,
+      stilTeksta: mob ? 'position:relative; z-index:8; width:100%; display:flex; flex-direction:column; align-items:flex-start' : `position:absolute; z-index:8; top:calc(50% + ${((this.state.headerH || 76) / 2).toFixed(0)}px); left:${sideGap.toFixed(0)}px; width:${(contentW * 0.45).toFixed(0)}px; transform:translateY(calc(-50% + ${mix(0, -80, 1 - tekst).toFixed(1)}px)); display:flex; flex-direction:column; align-items:flex-start; opacity:${tekst.toFixed(3)}; pointer-events:${tekst > 0.4 ? 'auto' : 'none'}`,
+      stilSlike1: mob ? 'position:relative; z-index:3; width:100%; height:58vh; min-height:340px; border-radius:26px; overflow:hidden; background-color:#CDEBE0; background-image:url(assets/hero-pacijent-nova.webp); background-size:cover; background-position:58% 26%; box-shadow:0 20px 50px rgba(43,30,22,0.14)' : `position:absolute; z-index:3; top:calc(50% + ${mix((this.state.headerH || 76) / 2, 0, f1).toFixed(0)}px); transform:translateY(-50%); right:${mix(sideGap, 0, f1).toFixed(0)}px; width:${sirina1.toFixed(0)}px; height:${visinaSlike ? visinaSlike.toFixed(0) + 'px' : visina1.toFixed(2) + 'vh'}; border-radius:${radius1.toFixed(1)}px; overflow:hidden; background-color:#CDEBE0; background-image:url(assets/hero-pacijent-nova.webp); background-size:cover; background-position:${pozX.toFixed(1)}% ${pozY.toFixed(1)}%; box-shadow:${f1 < 0.9 ? '0 32px 80px rgba(43,30,22,0.14)' : 'none'}; opacity:${clamp(1 - f2).toFixed(3)}`,
       stilKartice: mob ? 'display:none' : `position:absolute; z-index:4; width:${sirina2.toFixed(2)}vw; height:${visina2.toFixed(2)}vh; border-radius:${radius2.toFixed(1)}px; box-shadow:${senka2}; opacity:${clamp(f2).toFixed(3)}; pointer-events:none`,
       stilSlike2: `position:absolute; inset:0; border:${mix(0, 12, f3).toFixed(1)}px solid #FFFFFF; border-radius:inherit; overflow:hidden; background-color:#CDEBE0; background-image:url(assets/hero-solo-studio.webp); background-size:cover; background-position:34% 30%; box-shadow:inset 0 0 0 1px rgba(43,30,22,0.06)`,
       stilPotpisa: `position:absolute; left:-200px; bottom:46%; width:min(300px,68vw); background:rgba(255,251,247,0.82); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.6); padding:20px 22px; border-radius:24px; box-shadow:0 34px 80px rgba(43,30,22,0.3), 0 6px 18px rgba(43,30,22,0.14); opacity:${potpis.toFixed(3)}; transform:translateY(${mix(24, 0, potpis).toFixed(1)}px)`,
