@@ -216,11 +216,11 @@
   </div>
 
   <section id="filozofija" data-screen-label="Naša filozofija" style="background:#FFFFFF; padding:clamp(60px,9vw,100px) clamp(20px,4vw,48px)">
-    <div data-reveal="1" style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:clamp(32px,5vw,64px); align-items:start; opacity:0; transform:translateY(20px); transition:opacity 600ms ease-out, transform 600ms ease-out">
+    <div data-reveal="1" style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:clamp(32px,5vw,64px); align-items:stretch; opacity:0; transform:translateY(20px); transition:opacity 600ms ease-out, transform 600ms ease-out">
       <div style="{{ stilLepljivoFilozofija }}">
         <span style="font-family:'Instrument Sans',sans-serif; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#2B1E16; opacity:0.6">Naša filozofija • Obrenovac</span>
         <h2 style="margin:0; font-family:'Instrument Serif',serif; font-weight:500; font-size:32px; line-height:1.25; letter-spacing:-0.01em; color:#2B1E16; text-wrap:pretty">Zato što poseta može da izgleda i oseća se drugačije.</h2>
-        <div style="width:100%; aspect-ratio:4/3; border-radius:18px; overflow:hidden; background-color:#FBF7F2; background-image:url('assets/filozofija-ordinacija.webp'); background-size:cover; background-position:50% 55%"></div>
+        <div style="width:100%; flex:1; min-height:280px; border-radius:18px; overflow:hidden; background-color:#FBF7F2; background-image:url('assets/filozofija-ordinacija.webp'); background-size:cover; background-position:50% 55%"></div>
       </div>
       <div style="display:flex; flex-direction:column; gap:16px">
         <div id="razlozi-scroll" style="{{ stilRazloziRed }}">
@@ -545,8 +545,8 @@
     <span style="position:absolute; z-index:1; right:-4vw; top:34%; transform:rotate(-5deg); font-family:'Instrument Serif',serif; font-weight:600; font-size:20vw; line-height:0.8; color:#FFFFFF; opacity:0.06; filter:blur(2px); pointer-events:none; white-space:nowrap">ZAKAŽI</span>
     <div style="position:relative; z-index:2; max-width:1180px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:40px; align-items:start">
       <div style="min-width:0; display:flex; flex-direction:column">
-        <h2 style="margin:0; max-width:400px; font-family:'Manrope',sans-serif; font-weight:700; font-size:clamp(44px,5.6vw,72px); line-height:0.9; color:#3D2B1F; text-wrap:balance">Hajde da se dogovorimo</h2>
-        <p style="margin:24px 0 64px; max-width:360px; font-size:16px; line-height:1.6; color:rgba(43,27,18,0.55)">Ostavi poruku u jednoj rečenici, mi zovemo nazad za 30 minuta. Bez obaveza, vaš broj ostaje kod nas.</p>
+        <h2 style="margin:0; max-width:400px; font-family:'Manrope',sans-serif; font-weight:700; font-size:clamp(44px,5.6vw,72px); line-height:0.9; color:#3D2B1F; text-wrap:balance">Vaš sledeći korak počinje ovderimo</h2>
+        <p style="margin:24px 0 64px; max-width:360px; font-size:16px; line-height:1.6; color:rgba(43,27,18,0.55)">Ostavite poruku, a mi ćemo vam se javiti u najkraćem roku.</p>
         <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; max-width:100%">
           <span style="display:inline-flex; align-items:center; gap:10px; flex:1 1 220px; min-width:200px">
           <span style="flex:none; font-family:'Instrument Serif',serif; font-weight:500; font-size:20px; letter-spacing:-0.3px; white-space:nowrap; color:rgba(43,27,18,0.8)">Ja sam</span>
@@ -824,10 +824,10 @@ class Component extends DCLogic {
       stilKontaktSekcije: `position:relative; overflow:hidden; ${mob ? '' : 'min-height:85vh;'} background:#AFC8CB; padding:clamp(70px,9vw,120px) clamp(20px,4vw,48px) ${mob ? '0' : 'clamp(70px,9vw,120px)'}`,
       stilKontaktPraznina: mob ? 'display:none' : 'min-height:420px',
       stilKontaktDoktor: mob
-        ? "position:relative; z-index:3; width:78%; max-width:340px; aspect-ratio:1190/1105; margin:36px auto 150px; background-image:url('assets/kontakt-doktor.png'); background-size:contain; background-repeat:no-repeat; background-position:bottom center"
+        ? "position:relative; z-index:1; width:92%; max-width:400px; aspect-ratio:1536/1024; margin:36px auto 0; background-image:url('assets/kontakt-doktor.png'); background-size:contain; background-repeat:no-repeat; background-position:bottom center; filter:drop-shadow(0 20px 30px rgba(0,0,0,0.15))"
         : "position:absolute; z-index:3; right:max(clamp(20px,4vw,48px), calc((100% - 1180px) / 2)); bottom:0; width:min(40vw,500px); height:min(640px,86%); pointer-events:none; background-image:url('assets/kontakt-doktor.png'); background-size:contain; background-repeat:no-repeat; background-position:right bottom",
       stilKontaktBedza: mob
-        ? "position:absolute; left:0; right:0; top:calc(100% + 16px); margin:0 auto; width:min(290px,88%); background:rgba(255,255,255,0.92); backdrop-filter:blur(20px); border-radius:16px; padding:16px 18px; display:flex; flex-direction:column; gap:4px"
+        ? "position:relative; z-index:2; margin:0 auto 40px; width:85%; max-width:380px; background:#FFFFFF; border-radius:24px; padding:20px 24px; display:flex; flex-direction:column; gap:4px; box-shadow:0 10px 40px rgba(0,0,0,0.08)"
         : "position:absolute; right:12px; left:auto; width:min(290px,74%); bottom:28px; background:rgba(255,255,255,0.88); backdrop-filter:blur(20px); border-radius:16px; padding:16px 18px; display:flex; flex-direction:column; gap:4px",
       hedYPomeraj: this.state.hedVidljiv ? '0px' : '-' + ((this.state.headerH || 76) + 8) + 'px',
       stilDoktorSlika: `position:absolute; inset:0; background-image:url(assets/doktor-portret.png); background-size:cover; background-position:50% 30%; transform:scale(${this.state.procesVidljiv ? 1 : 1.08}); transition:transform 1200ms cubic-bezier(0.16,1,0.3,1)`,
